@@ -34,9 +34,19 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} h-full`}
+      className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} h-full bg-bg`}
     >
-      <body className="min-h-full flex flex-col bg-bg text-fg antialiased">
+      <body className="min-h-full flex flex-col text-fg antialiased bg-transparent">
+        <video
+          className="fixed inset-0 -z-10 h-full w-full object-cover"
+          src="/bon-backdrop.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          aria-hidden
+        />
+        <div className="fixed inset-0 -z-10 bg-bg/60" aria-hidden />
         {children}
         <Analytics />
       </body>

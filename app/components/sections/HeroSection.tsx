@@ -19,8 +19,11 @@ export default function HeroSection() {
 
       <div className="relative z-10 max-w-[76rem] mx-auto px-6 text-center">
         <FadeIn>
+          <p className="text-[11px] tracking-[0.35em] uppercase text-dim mb-2">
+            Original Screenplay by Meghan Carrasquillo
+          </p>
           <p className="text-[11px] tracking-[0.35em] uppercase text-dim mb-10">
-            A feature film by Jadon Cal Fitzpatrick
+            Directed by Jadon Cal Fitzpatrick
           </p>
         </FadeIn>
 
