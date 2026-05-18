@@ -8,7 +8,7 @@
   --color-line: rgba(240, 237, 232, 0.1);
   --color-surface: rgba(240, 237, 232, 0.04);
 
-  --font-serif: var(--font-playfair), Georgia, "Times New Roman", serif;
+  --font-serif: "manifold-extd-cf", Georgia, "Times New Roman", serif;
   --font-sans: var(--font-geist-sans), system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), monospace;
 }
@@ -52,6 +52,17 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(240, 237, 232, 0.22);
+}
+
+@keyframes welcomeOverlay {
+  0%          { opacity: 0; }
+  12%, 100%   { opacity: 1; }
+}
+
+@keyframes welcomeText {
+  0%, 25%    { opacity: 0; }
+  45%, 72%   { opacity: 1; }
+  90%, 100%  { opacity: 0; }
 }
 
 @keyframes float {

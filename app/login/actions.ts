@@ -1,16 +1,16 @@
 'use server'
 
 import { cookies } from 'next/headers'
-import { redirect } from 'next/navigation'
 
 interface LoginState {
-  error: string
+  error?: string
+  success?: boolean
 }
 
 export async function loginAction(
   _prevState: LoginState | null,
   formData: FormData
-): Promise<LoginState | null> {
+): Promise<LoginState> {
   const password = formData.get('password') as string
   const correctPassword = process.env.BOTORNOT_ACCESS_PASSWORD
 
@@ -27,5 +27,5 @@ export async function loginAction(
     sameSite: 'strict',
   })
 
-  redirect('/')
+  return { success: true }
 }
