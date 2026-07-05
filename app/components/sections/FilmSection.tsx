@@ -17,11 +17,9 @@ export default function FilmSection() {
           <div className="border-t border-line pt-8 pb-12 max-w-2xl">
             <p className="text-fg text-lg leading-[1.9] font-light">
               Bot or Not is a $3–5M contained sci-fi thriller written by Meghan Carrasquillo and
-              directed by Jadon Cal Fitzpatrick. A young coder enters a cutting-edge AI reality
-              dating show, only to discover that survival, not love, will be her ultimate
-              challenge. Targeting a 23-day shoot based at Lex Studios in Lexington, Kentucky.
-              Currently in development, with the proof-of-concept short film complete and
-              festival-validated.
+              directed by Jadon Cal Fitzpatrick. Targeting a 23-day shoot based at Lex Studios in
+              Lexington, Kentucky. Currently in development, with the proof-of-concept short film
+              complete and festival-validated.
             </p>
           </div>
         </FadeIn>

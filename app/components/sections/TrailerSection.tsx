@@ -24,8 +24,9 @@ export default function TrailerSection() {
             ) : (
               <>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
+                {/* This upload has no maxresdefault thumbnail on YouTube; sddefault is the largest that exists */}
                 <img
-                  src={`https://img.youtube.com/vi/${VIDEO_ID}/maxresdefault.jpg`}
+                  src={`https://img.youtube.com/vi/${VIDEO_ID}/sddefault.jpg`}
                   alt="Bot or Not — Official Trailer thumbnail"
                   className="w-full h-full object-cover"
                 />
