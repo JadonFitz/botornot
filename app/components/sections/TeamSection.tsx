@@ -62,11 +62,13 @@ export default function TeamSection() {
           {/* Meghan */}
           <FadeIn delay={0.16}>
             <div>
-              {/* PLACEHOLDER: Headshot — Meghan. Editorial portrait, monochrome-compatible, consistent crop. */}
-              <div className="w-[200px] aspect-[3/4] bg-surface border border-line mb-6 flex items-center justify-center">
-                <p className="text-dim text-[10px] text-center px-4 leading-relaxed">
-                  [PLACEHOLDER: Headshot — Meghan Carrasquillo]
-                </p>
+              <div className="w-[200px] aspect-[3/4] border border-line mb-6 overflow-hidden">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/meghan-headshot.jpg"
+                  alt="Meghan Carrasquillo"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="font-serif text-xl text-fg mb-1">Meghan Carrasquillo</h3>
               <p className="text-[11px] tracking-[0.2em] uppercase text-accent mb-5">Writer / Lead</p>
