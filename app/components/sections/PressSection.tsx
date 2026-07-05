@@ -49,7 +49,8 @@ const shortCredits = [
   },
   {
     title: 'Fangoria',
-    note: 'Exclusive trailer drop',
+    note: 'Exclusive trailer debut',
+    href: 'https://www.fangoria.com/bot-or-not-exclusive-trailer/',
   },
   {
     title: 'Additional Press',
@@ -62,6 +63,7 @@ interface Credit {
   title: string
   note: string
   placeholder?: boolean
+  href?: string
 }
 
 function CreditList({ credits }: { credits: Credit[] }) {
@@ -72,10 +74,21 @@ function CreditList({ credits }: { credits: Credit[] }) {
           key={`${item.title}-${i}`}
           className={`py-4 ${i < credits.length - 1 ? 'border-b border-line' : ''}`}
         >
-          <p className={`text-sm ${item.placeholder ? 'text-dim italic' : 'text-fg font-medium'}`}>
-            {item.title}
-          </p>
-          <p className="text-dim text-xs mt-0.5">{item.note}</p>
+          {item.href ? (
+            <a href={item.href} target="_blank" rel="noopener noreferrer" className="group block">
+              <p className="text-sm text-fg font-medium group-hover:text-accent transition-colors duration-200">
+                {item.title} →
+              </p>
+              <p className="text-dim text-xs mt-0.5">{item.note}</p>
+            </a>
+          ) : (
+            <>
+              <p className={`text-sm ${item.placeholder ? 'text-dim italic' : 'text-fg font-medium'}`}>
+                {item.title}
+              </p>
+              <p className="text-dim text-xs mt-0.5">{item.note}</p>
+            </>
+          )}
         </li>
       ))}
     </ul>
