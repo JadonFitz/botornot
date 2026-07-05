@@ -129,7 +129,7 @@ export default function ShortSection() {
             <div className="mb-10">
               <p className="font-serif text-fg font-normal leading-none mb-3"
                 style={{ fontSize: 'clamp(3rem, 7vw, 5rem)' }}>
-                300K+
+                338,300+
               </p>
               <p className="text-[11px] tracking-[0.25em] uppercase text-dim">
                 Combined organic reach in the first nine days
@@ -139,9 +139,9 @@ export default function ShortSection() {
             <p className="text-fg text-base leading-[1.85] max-w-2xl mb-10">
               In late June 2026, the short was uploaded to YouTube and shared once on Reddit&rsquo;s
               r/Filmmakers. With zero paid spend, the post became the #2 post of the day and the
-              audience followed the film across platforms — over 300,000 impressions across
-              Reddit, YouTube, and Instagram. The demand question investors ask of any concept,
-              answered with data.
+              audience followed the film across platforms — 338,300+ impressions across Reddit,
+              YouTube, and Instagram, and climbing. The demand question investors ask of any
+              concept, answered with data.
             </p>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-line border border-line mb-10">
@@ -154,6 +154,20 @@ export default function ShortSection() {
                   <p className="text-dim text-xs leading-relaxed">{item.note}</p>
                 </div>
               ))}
+            </div>
+
+            <div className="border border-line mb-10">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/yt-analytics.jpg"
+                alt="YouTube analytics dashboard for the Bot or Not short film — 150.3K impressions, 12K views, 9.7K unique viewers since June 25, 2026"
+                className="w-full h-auto"
+              />
+              <p className="text-dim text-xs px-5 py-3 border-t border-line">
+                YouTube analytics, June 25 – July 4, 2026 — 150.3K impressions, 12K views, 9.7K
+                unique viewers, driven almost entirely by YouTube&rsquo;s own recommendation
+                engine.
+              </p>
             </div>
 
             <div className="max-w-2xl border-l-2 border-accent pl-5">
