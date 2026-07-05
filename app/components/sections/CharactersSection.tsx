@@ -54,12 +54,12 @@ const characters: Character[] = [
   {
     name: 'Mateo',
     role: 'The Ally',
-    text: 'Juliet’s confidant and problem-solver once she enters the show, helping her make sense of BOT OR NOT both on and off set. Calm and resourceful, and initially unaware of the show’s deeper manipulations, Mateo uncovers the truth alongside Juliet — a crucial ally in her journey to expose the reality behind the game.',
+    text: 'Juliet’s confidant and problem-solver once she enters the show, helping her make sense of BOT OR NOT both on and off set. Calm and resourceful, and initially unaware of the show’s deeper manipulations, Mateo uncovers the truth alongside Juliet.',
   },
   {
     name: 'Skylar',
     role: 'The Competitor',
-    text: 'A mega-famous influencer beloved for her charisma and martial arts skills. On BOT OR NOT she brings daring, fearless energy into the villa — challenging rivals and pushing boundaries at every turn, forcing Juliet and the other contestants to confront challenges in unexpected ways.',
+    text: 'A mega-famous influencer beloved for her charisma and martial arts skills. On BOT OR NOT she brings daring, fearless energy into the villa — challenging rivals and pushing boundaries at every turn, forcing Juliet and the other contestants to confront challenges in unexpected ways. A crucial ally in Juliet’s journey to expose the reality behind the game.',
   },
   {
     name: 'Benny',

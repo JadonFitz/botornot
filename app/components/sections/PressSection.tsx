@@ -45,7 +45,7 @@ const shortCredits = [
   },
   {
     title: 'FilmQuest',
-    note: 'Nominee — Best Ensemble',
+    note: 'Nominee — Best Ensemble & Best Sci-Fi',
   },
   {
     title: 'Fangoria',

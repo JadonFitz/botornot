@@ -27,7 +27,7 @@ const demandStats = [
 const laurels = [
   { fest: 'Screamfest', note: 'World Premiere — TCL Chinese Theatre, 2025' },
   { fest: 'Lois Weber Film Festival', note: 'Winner — Best Sci-Fi' },
-  { fest: 'FilmQuest', note: 'Nominee — Best Ensemble' },
+  { fest: 'FilmQuest', note: 'Nominee — Best Ensemble & Best Sci-Fi' },
 ]
 
 export default function ShortSection() {
@@ -48,10 +48,8 @@ export default function ShortSection() {
             <FadeIn delay={0.08}>
               <p className="text-fg text-base leading-[1.85] mb-10">
                 Bot or Not premiered at Screamfest at TCL Chinese Theatre in 2025, won Best Sci-Fi
-                at the Lois Weber Film Festival, and was nominated for Best Ensemble at FilmQuest.
-                The short proves the world, the tone, and the visual approach — closing the question
-                buyers and investors most often ask of sci-fi-adjacent projects:{' '}
-                <em>"What does it look like?"</em>
+                at the Lois Weber Film Festival, and was nominated for Best Ensemble and Best
+                Sci-Fi at FilmQuest.
               </p>
             </FadeIn>
 

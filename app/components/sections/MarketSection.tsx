@@ -80,7 +80,7 @@ export default function MarketSection() {
                   Festival Validated
                 </p>
                 <p className="text-dim text-xs leading-relaxed">
-                  Screamfest · Lois Weber Best Sci-Fi · FilmQuest Ensemble Nominee
+                  Screamfest · Lois Weber Best Sci-Fi · FilmQuest Ensemble &amp; Sci-Fi Nominee
                 </p>
               </div>
             </div>
