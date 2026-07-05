@@ -27,6 +27,43 @@ const totals: TotalRow[] = [
   { label: 'Net Capital at Risk (after incentive)', amount: 4425976, strong: true },
 ]
 
+// Revenue Scenarios & Recoupment Waterfall — budget v3 (July 2026)
+const scenarioCols = [
+  { key: 'c', name: 'Conservative', note: 'Downside honesty' },
+  { key: 't', name: 'Target', note: 'Credible expectation' },
+  { key: 'b', name: 'Breakout', note: 'Genre hit with name cast' },
+] as const
+
+interface ScenarioRow {
+  label: string
+  detail?: string
+  c: number
+  t: number
+  b: number
+  strong?: boolean
+}
+
+const revenueRows: ScenarioRow[] = [
+  { label: 'NA theatrical — film rental', detail: '45% exhibitor split on $1.2M / $3.5M / $6.5M box office · self-distributed', c: 540000, t: 1575000, b: 2925000 },
+  { label: 'PVOD / TVOD net receipts', detail: 'Platform 70/30 split — theatrical spend compounds here', c: 500000, t: 1400000, b: 2800000 },
+  { label: 'SVOD / AVOD / Pay-1 licenses', detail: 'Post-transactional window license(s)', c: 250000, t: 700000, b: 1400000 },
+  { label: 'Foreign net receipts', detail: 'All territories via sales agent, net of 20% commission and capped expenses', c: 245000, t: 965000, b: 2005000 },
+  { label: 'Ancillary', detail: 'Airlines, cable, merch, music', c: 30000, t: 100000, b: 250000 },
+  { label: 'Kentucky incentive proceeds', detail: '~19% of production budget, 6–18 months post-audit', c: 570015, t: 570015, b: 570015 },
+  { label: 'Total Gross Receipts', c: 2135015, t: 5310015, b: 9950015, strong: true },
+]
+
+const waterfallRows: ScenarioRow[] = [
+  { label: 'Net receipts to waterfall', detail: 'After 1% collection-account fee and est. guild residuals', c: 2076165, t: 5151915, b: 9640515 },
+  { label: 'Tier 1 — Return of capital (100%)', detail: 'First position', c: 2076165, t: 4995991, b: 4995991 },
+  { label: 'Tier 2 — Investor premium (20%)', c: 0, t: 155924, b: 999198 },
+  { label: 'Tier 3 — Deferral pool', detail: 'Deferred cast / producer fees', c: 0, t: 0, b: 150000 },
+  { label: 'Tier 4 — Net profits, investor share (50%)', detail: 'Producer side pays talent participations from its half', c: 0, t: 0, b: 1747663 },
+  { label: 'Total Cash to Investors', c: 2076165, t: 5151915, b: 7742852, strong: true },
+]
+
+const multiples = { c: '0.42×', t: '1.03×', b: '1.55×' }
+
 const releaseRows = [
   { label: 'Paid media — digital, social, CTV, OOH, creator seeding', amount: 1040000 },
   { label: 'Exhibition — platform launch 8–12 markets + performance-gated expansion pool', amount: 250000 },
@@ -155,6 +192,121 @@ export default function FinancingSection() {
           </div>
         </FadeIn>
 
+        {/* Revenue scenarios */}
+        <FadeIn delay={0.1}>
+          <div className="max-w-4xl mb-14">
+            <h3 className="text-[11px] tracking-[0.25em] uppercase text-dim mb-4">
+              Revenue Scenarios
+            </h3>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm min-w-[600px]">
+                <thead>
+                  <tr className="border-b border-line text-[10px] tracking-[0.2em] uppercase text-dim">
+                    <th className="text-left font-normal py-3 pr-4">Revenue Stream</th>
+                    {scenarioCols.map((col) => (
+                      <th key={col.key} className="text-right font-normal py-3 pl-4">
+                        {col.name}
+                        <span className="block normal-case tracking-normal text-[10px] text-dim/70 font-normal mt-0.5">
+                          {col.note}
+                        </span>
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {revenueRows.map((row) => (
+                    <tr key={row.label} className={`border-b border-line ${row.strong ? 'bg-fg/[0.03]' : ''}`}>
+                      <td className={`py-3.5 pr-4 ${row.strong ? 'text-fg text-[11px] tracking-[0.2em] uppercase' : ''}`}>
+                        {!row.strong && <span className="text-fg">{row.label}</span>}
+                        {row.strong && row.label}
+                        {row.detail && (
+                          <span className="block text-dim text-[11px] mt-0.5 normal-case tracking-normal">{row.detail}</span>
+                        )}
+                      </td>
+                      {scenarioCols.map((col) => (
+                        <td key={col.key} className="py-3.5 pl-4 text-right text-fg tabular-nums whitespace-nowrap">
+                          {fmt(row[col.key])}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </FadeIn>
+
+        {/* Recoupment waterfall */}
+        <FadeIn delay={0.1}>
+          <div className="max-w-4xl mb-14">
+            <h3 className="text-[11px] tracking-[0.25em] uppercase text-dim mb-4">
+              Recoupment Waterfall
+            </h3>
+            <p className="text-dim text-sm leading-relaxed max-w-2xl mb-6">
+              Market-standard single-tier equity structure: 100% return of capital in first
+              position, then a 20% investor premium, then deferred fees, then 50/50 net profits.
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm min-w-[600px]">
+                <thead>
+                  <tr className="border-b border-line text-[10px] tracking-[0.2em] uppercase text-dim">
+                    <th className="text-left font-normal py-3 pr-4">Tier</th>
+                    {scenarioCols.map((col) => (
+                      <th key={col.key} className="text-right font-normal py-3 pl-4">{col.name}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {waterfallRows.map((row) => (
+                    <tr key={row.label} className={`border-b border-line ${row.strong ? 'bg-fg/[0.03]' : ''}`}>
+                      <td className={`py-3.5 pr-4 ${row.strong ? 'text-fg text-[11px] tracking-[0.2em] uppercase' : ''}`}>
+                        {!row.strong && <span className="text-fg">{row.label}</span>}
+                        {row.strong && row.label}
+                        {row.detail && (
+                          <span className="block text-dim text-[11px] mt-0.5 normal-case tracking-normal">{row.detail}</span>
+                        )}
+                      </td>
+                      {scenarioCols.map((col) => (
+                        <td key={col.key} className="py-3.5 pl-4 text-right text-fg tabular-nums whitespace-nowrap">
+                          {fmt(row[col.key])}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                  <tr>
+                    <td className="py-4 pr-4 text-fg text-[11px] tracking-[0.2em] uppercase">
+                      Investor Multiple
+                    </td>
+                    {scenarioCols.map((col) => (
+                      <td key={col.key} className="py-4 pl-4 text-right">
+                        <span className="font-serif text-2xl text-fg">{multiples[col.key]}</span>
+                      </td>
+                    ))}
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="mt-6 space-y-2 max-w-2xl">
+              <p className="text-dim text-xs leading-relaxed">
+                The conservative case is deliberately underwater — a model that shows a real
+                downside is a model that can be trusted. Because P&amp;A is stage-gated, the full
+                $2M never deploys in a soft launch; the actual downside is smaller than modeled.
+                Breakeven lands at roughly $5.2M in gross receipts.
+              </p>
+              <p className="text-dim text-xs leading-relaxed">
+                Foreign presales against the name cast can be closed pre-production to reduce the
+                equity ask — not modeled; pure de-risking upside. The Kentucky incentive is
+                modeled into the waterfall; deal terms can instead return it to investors
+                directly, accelerating their recoupment clock.
+              </p>
+              <p className="text-dim text-xs leading-relaxed italic">
+                Planning estimates for discussion — not projections, and not an offer of
+                securities. Actual results depend on release performance.
+              </p>
+            </div>
+          </div>
+        </FadeIn>
+
         <div className="grid md:grid-cols-2 gap-14 max-w-4xl">
           <FadeIn delay={0.08}>
             <div className="space-y-10">
@@ -203,13 +355,15 @@ export default function FinancingSection() {
 
               <div>
                 <h3 className="text-[11px] tracking-[0.25em] uppercase text-dim mb-4">
-                  Recoupment Waterfall
+                  Deal Terms at a Glance
                 </h3>
-                {/* PLACEHOLDER: Recoupment model. Sophisticated investors expect this. */}
-                <p className="text-dim italic text-sm leading-relaxed mb-3">
-                  [PLACEHOLDER: Recoupment model — to be provided. Sophisticated investors expect this; do not omit when complete.]
+                <p className="text-dim text-sm leading-relaxed mb-3">
+                  Capital first, 100% in first position · 20% investor premium · deferral pool ·
+                  50/50 net profits with talent participations paid from the producer share. All
+                  terms negotiable — alternatives such as a 115% premium with 60/40 profits or
+                  corridor structures are on the table.
                 </p>
-                <p className="text-dim text-xs">Detailed financial model available upon request.</p>
+                <p className="text-dim text-xs">Full financial model available in data room.</p>
               </div>
 
               <div className="border border-line p-5">
