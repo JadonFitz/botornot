@@ -35,9 +35,9 @@ export default function HeroSection() {
         </FadeIn>
 
         <FadeIn delay={0.24}>
-          {/* PLACEHOLDER: Tagline — short evocative line, not the full pitch. Jadon and Meghan to provide. */}
-          <p className="text-dim text-sm tracking-wide max-w-sm mx-auto italic">
-            [PLACEHOLDER: Tagline]
+          <p className="text-dim text-sm tracking-wide max-w-md mx-auto">
+            A cutting-edge AI reality dating show — where survival, not love, is the ultimate
+            challenge.
           </p>
         </FadeIn>
       </div>

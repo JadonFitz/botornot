@@ -4,12 +4,12 @@ const risks = [
   {
     risk: 'Indie market saturation',
     mitigation:
-      'Single-genre clarity, festival validation, proof-of-concept short complete. The Maze Runner / Hunger Games tonal lane is a recognized category — Bot or Not is positioned to feel inevitable, not invented.',
+      'Single-genre clarity, festival validation, proof-of-concept short complete. The Hunger Games / Divergent lane is a recognized category — Bot or Not is positioned to feel inevitable, not invented.',
   },
   {
     risk: 'Sci-fi presale resistance',
     mitigation:
-      'Action-thriller positioning leads; sci-fi is the world, not the genre. Comp set built on recognizable PG-13 action-thrillers. Finished-product MG strategy with two named buyer targets (Vertical, Radial) whose public mandates explicitly include this cluster.',
+      'High-concept commercial positioning leads: a reality-TV premise audiences instantly grasp, at contained scale. Comp set spans the Hunger Games / Divergent creative lane and the Companion / Ex Machina financial lane. Finished-product MG strategy with two named buyer targets (Vertical, Radial) whose public mandates explicitly include this cluster.',
   },
   {
     risk: 'Budget overrun risk',
@@ -43,7 +43,7 @@ export default function RiskSection() {
     <section id="risk" className="py-28 md:py-36 border-t border-line">
       <div className="max-w-[76rem] mx-auto px-6">
         <FadeIn>
-          <p className="text-[11px] tracking-[0.3em] uppercase text-dim mb-5">§ 08 — Risk</p>
+          <p className="text-[11px] tracking-[0.3em] uppercase text-dim mb-5">§ 10 — Risk</p>
           <h2 className="font-serif font-normal text-fg leading-tight mb-4"
             style={{ fontSize: 'clamp(2rem, 5vw, 3.25rem)' }}>
             Risk &amp; Mitigation

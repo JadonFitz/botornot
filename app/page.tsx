@@ -2,6 +2,8 @@ import Nav from './components/Nav'
 import Footer from './components/Footer'
 import HeroSection from './components/sections/HeroSection'
 import FilmSection from './components/sections/FilmSection'
+import WorldSection from './components/sections/WorldSection'
+import CharactersSection from './components/sections/CharactersSection'
 import TrailerSection from './components/sections/TrailerSection'
 import ShortSection from './components/sections/ShortSection'
 import TeamSection from './components/sections/TeamSection'
@@ -21,6 +23,8 @@ export default function Home() {
         <HeroSection />
         <TrailerSection />
         <FilmSection />
+        <WorldSection />
+        <CharactersSection />
         <ShortSection />
         <TeamSection />
         <PackageSection />

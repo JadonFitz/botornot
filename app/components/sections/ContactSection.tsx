@@ -21,7 +21,7 @@ export default function ContactSection() {
       <section id="contact" className="py-28 md:py-36 border-t border-line">
         <div className="max-w-[76rem] mx-auto px-6">
           <FadeIn>
-            <p className="text-[11px] tracking-[0.3em] uppercase text-dim mb-5">§ 10 — Contact</p>
+            <p className="text-[11px] tracking-[0.3em] uppercase text-dim mb-5">§ 12 — Contact</p>
             <h2 className="font-serif font-normal text-fg leading-tight mb-8"
               style={{ fontSize: 'clamp(2rem, 5vw, 3.25rem)' }}>
               Next Steps
@@ -42,7 +42,7 @@ export default function ContactSection() {
     <section id="contact" className="py-28 md:py-36 border-t border-line">
       <div className="max-w-[76rem] mx-auto px-6">
         <FadeIn>
-          <p className="text-[11px] tracking-[0.3em] uppercase text-dim mb-5">§ 10 — Contact</p>
+          <p className="text-[11px] tracking-[0.3em] uppercase text-dim mb-5">§ 12 — Contact</p>
           <h2 className="font-serif font-normal text-fg leading-tight mb-6"
             style={{ fontSize: 'clamp(2rem, 5vw, 3.25rem)' }}>
             Next Steps

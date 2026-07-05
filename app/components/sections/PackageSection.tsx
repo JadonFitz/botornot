@@ -1,9 +1,16 @@
 import FadeIn from '../FadeIn'
 
-const packageItems = [
+interface PackageItem {
+  label: string
+  note: string
+  status?: string
+}
+
+const packageItems: PackageItem[] = [
   {
     label: 'Cast Attachments',
-    note: '[PLACEHOLDER: Populate as locked. Packaging discipline: one strong selective name preferred over multiple recognizable-but-saturated names.]',
+    status: 'Cast in Place',
+    note: 'Meghan Carrasquillo (Juliet), Chris Moss (Declan Callum), and Gigi Gustin (Blair) are attached. All remaining roles cast through auditions — pitch-deck talent references are aspirational tone benchmarks, not locked cast. Packaging discipline: one strong selective name preferred over multiple recognizable-but-saturated names.',
   },
   {
     label: 'Sales Agent / Distribution Path',
@@ -11,7 +18,7 @@ const packageItems = [
   },
   {
     label: 'Production Geography / Soft Money',
-    note: '[PLACEHOLDER: Populate once shooting location locked. Options under evaluation: Florida, Georgia, New Mexico, Canada.]',
+    note: 'Lexington, Kentucky — based at Lex Studios (three stages, standing sets, offices). Kentucky Entertainment Incentive: refundable credit of 35% on resident labor and 30% on non-resident labor and Kentucky vendor spend, modeled to return ~18–19% of gross budget as cash post-audit.',
   },
   {
     label: 'Action Choreographer / 2nd Unit Director',
@@ -24,7 +31,7 @@ export default function PackageSection() {
     <section id="package" className="py-28 md:py-36 border-t border-line">
       <div className="max-w-[76rem] mx-auto px-6">
         <FadeIn>
-          <p className="text-[11px] tracking-[0.3em] uppercase text-dim mb-5">§ 04 — The Package</p>
+          <p className="text-[11px] tracking-[0.3em] uppercase text-dim mb-5">§ 06 — The Package</p>
           <h2 className="font-serif font-normal text-fg leading-tight mb-14"
             style={{ fontSize: 'clamp(2rem, 5vw, 3.25rem)' }}>
             The Package
@@ -38,10 +45,10 @@ export default function PackageSection() {
                 <div className="sm:w-60 flex-shrink-0">
                   <p className="text-fg text-sm mb-2">{item.label}</p>
                   <span className="inline-block text-[10px] tracking-[0.18em] uppercase text-accent border border-accent/25 px-2.5 py-1">
-                    In Development
+                    {item.status ?? 'In Development'}
                   </span>
                 </div>
-                <p className="text-dim italic text-sm leading-relaxed">{item.note}</p>
+                <p className={`text-sm leading-relaxed ${item.note.startsWith('[') ? 'text-dim italic' : 'text-dim'}`}>{item.note}</p>
               </div>
             </FadeIn>
           ))}

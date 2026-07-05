@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'Bot or Not — Investor Overview',
-  description: 'A $5M PG-13 action-thriller. Investor information available upon request.',
+  description: 'A $3–5M contained sci-fi thriller. Investor information available upon request.',
   robots: { index: false, follow: false },
 }
 

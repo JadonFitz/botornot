@@ -5,7 +5,7 @@ export default function MarketSection() {
     <section id="market" className="py-28 md:py-36 border-t border-line">
       <div className="max-w-[76rem] mx-auto px-6">
         <FadeIn>
-          <p className="text-[11px] tracking-[0.3em] uppercase text-dim mb-5">§ 05 — Market</p>
+          <p className="text-[11px] tracking-[0.3em] uppercase text-dim mb-5">§ 07 — Market</p>
           <h2 className="font-serif font-normal text-fg leading-tight mb-14"
             style={{ fontSize: 'clamp(2rem, 5vw, 3.25rem)' }}>
             Why This Film. Why Now.
@@ -20,11 +20,12 @@ export default function MarketSection() {
                 The Genre Lane
               </h3>
               <p className="text-fg text-sm leading-[1.9]">
-                Action-thriller travels internationally and remains a consistent global driver at the
-                indie scale. The PG-13 commitment keeps the buyer ladder meaningfully wider than R —
-                Pay-1, international, and family-co-viewing audiences all expand. Bot or Not sits in
-                the <em>Maze Runner</em> / <em>Hunger Games</em> tonal lane at indie scale — proven
-                economic territory.
+                High-concept sci-fi thriller travels internationally and remains a consistent
+                global driver at the indie scale. The PG-13 commitment keeps the buyer ladder
+                meaningfully wider than R — Pay-1, international, and family-co-viewing audiences
+                all expand. Bot or Not sits in the <em>Hunger Games</em> / <em>Divergent</em>{' '}
+                creative lane, with <em>Companion</em> and <em>Ex Machina</em> as financial-scale
+                comps — smart, contained sci-fi with proven economics.
               </p>
             </div>
           </FadeIn>
