@@ -126,11 +126,22 @@ export default function ShortSection() {
             <h3 className="text-[11px] tracking-[0.25em] uppercase text-accent mb-3">
               Proof of Demand — 100% Organic
             </h3>
+            <div className="mb-10">
+              <p className="font-serif text-fg font-normal leading-none mb-3"
+                style={{ fontSize: 'clamp(3rem, 7vw, 5rem)' }}>
+                300K+
+              </p>
+              <p className="text-[11px] tracking-[0.25em] uppercase text-dim">
+                Combined organic reach in the first nine days
+              </p>
+            </div>
+
             <p className="text-fg text-base leading-[1.85] max-w-2xl mb-10">
               In late June 2026, the short was uploaded to YouTube and shared once on Reddit&rsquo;s
               r/Filmmakers. With zero paid spend, the post became the #2 post of the day and the
-              audience followed the film across platforms — the demand question investors ask of
-              any concept, answered with data.
+              audience followed the film across platforms — over 300,000 impressions across
+              Reddit, YouTube, and Instagram. The demand question investors ask of any concept,
+              answered with data.
             </p>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-line border border-line mb-10">
