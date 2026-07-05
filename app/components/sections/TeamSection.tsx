@@ -34,11 +34,13 @@ export default function TeamSection() {
           {/* Jadon */}
           <FadeIn delay={0.12}>
             <div>
-              {/* PLACEHOLDER: Headshot — Jadon. Editorial portrait, monochrome-compatible, consistent crop. */}
-              <div className="w-[200px] aspect-[3/4] bg-surface border border-line mb-6 flex items-center justify-center">
-                <p className="text-dim text-[10px] text-center px-4 leading-relaxed">
-                  [PLACEHOLDER: Headshot — Jadon Cal Fitzpatrick]
-                </p>
+              <div className="w-[200px] aspect-[3/4] border border-line mb-6 overflow-hidden">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/jadon-headshot.jpg"
+                  alt="Jadon Cal Fitzpatrick"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="font-serif text-xl text-fg mb-1">Jadon Cal Fitzpatrick</h3>
               <p className="text-[11px] tracking-[0.2em] uppercase text-accent mb-5">Director</p>
