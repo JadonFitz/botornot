@@ -1,4 +1,5 @@
 import FadeIn from '../FadeIn'
+import ShortFilmPlayer from '../ShortFilmPlayer'
 
 // Analytics as of July 4, 2026 — screenshots in data room. Update as numbers grow.
 const demandStats = [
@@ -97,37 +98,7 @@ export default function ShortSection() {
           </div>
 
           <FadeIn delay={0.14}>
-            <a
-              href="https://youtu.be/LdkvaQd8ySc"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative block aspect-video border border-line overflow-hidden"
-              aria-label="Watch the Bot or Not short film on YouTube"
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/trailer-poster.jpg"
-                alt="Bot or Not — Short Film"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-black/25 group-hover:bg-black/10 transition-colors duration-200" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div
-                  className="flex items-center justify-center bg-red-600"
-                  style={{ width: 52, height: 44 }}
-                >
-                  <svg viewBox="0 0 10 12" fill="white" width={11} height={13} aria-hidden>
-                    <polygon points="0,0 10,6 0,12" />
-                  </svg>
-                </div>
-              </div>
-              <div className="absolute bottom-5 left-5 flex items-center gap-3 pointer-events-none">
-                <span className="block w-4 h-px bg-red-600" />
-                <span className="text-[10px] tracking-[0.28em] uppercase text-fg/75">
-                  Watch the Short Film
-                </span>
-              </div>
-            </a>
+            <ShortFilmPlayer />
           </FadeIn>
         </div>
 
