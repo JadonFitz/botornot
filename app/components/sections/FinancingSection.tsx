@@ -192,6 +192,24 @@ export default function FinancingSection() {
           </div>
         </FadeIn>
 
+        {/* How the money flows back */}
+        <FadeIn delay={0.08}>
+          <div className="max-w-4xl mb-14 border-t border-line pt-12">
+            <h3 className="text-[11px] tracking-[0.25em] uppercase text-accent mb-3">
+              How the Money Flows Back
+            </h3>
+            <p className="font-serif text-2xl text-fg mb-6">Recoupment Structure</p>
+            <p className="text-fg text-base leading-[1.85] max-w-2xl">
+              The film earns from five sources: North American theatrical (self-distributed — we
+              keep the film rental; our booking partner is a flat fee already inside the budget,
+              not a percentage of your revenue), transactional digital (PVOD/TVOD), streaming
+              licenses (SVOD/AVOD), foreign sales across all territories, and ancillary. The
+              Kentucky refundable credit — approximately $570,000 — enters the waterfall as
+              receipts, covering roughly 11% of breakeven before a single ticket sells.
+            </p>
+          </div>
+        </FadeIn>
+
         {/* Revenue scenarios */}
         <FadeIn delay={0.1}>
           <div className="max-w-4xl mb-14">
@@ -240,11 +258,23 @@ export default function FinancingSection() {
         <FadeIn delay={0.1}>
           <div className="max-w-4xl mb-14">
             <h3 className="text-[11px] tracking-[0.25em] uppercase text-dim mb-4">
-              Recoupment Waterfall
+              Off the Tops
+            </h3>
+            <p className="text-dim text-sm leading-[1.85] max-w-2xl mb-10">
+              Before any distribution to investors, three obligations are paid: collection
+              account management fees (1% of gross), guild residuals on post-theatrical markets
+              (estimated 5% of digital and streaming receipts), and foreign sales commission on
+              international revenue only (20%, plus capped expenses). There is no domestic
+              distribution fee — self-distribution means no distributor takes 25–35% of North
+              American revenue before you see it.
+            </p>
+            <h3 className="text-[11px] tracking-[0.25em] uppercase text-dim mb-4">
+              The Waterfall
             </h3>
             <p className="text-dim text-sm leading-relaxed max-w-2xl mb-6">
               Market-standard single-tier equity structure: 100% return of capital in first
-              position, then a 20% investor premium, then deferred fees, then 50/50 net profits.
+              position, then a 20% investor premium, then a capped $150K pool of deferred cast
+              and producer fees, then 50/50 net profits.
             </p>
             <div className="overflow-x-auto">
               <table className="w-full text-sm min-w-[600px]">
@@ -286,12 +316,18 @@ export default function FinancingSection() {
                 </tbody>
               </table>
             </div>
+            <div className="mt-8 border border-line p-5 max-w-2xl">
+              <p className="text-fg text-sm leading-relaxed">
+                Talent profit participations are paid entirely from the producers&rsquo; share.
+                The investor split is never diluted by backend points.
+              </p>
+            </div>
             <div className="mt-6 space-y-2 max-w-2xl">
               <p className="text-dim text-xs leading-relaxed">
-                The conservative case is deliberately underwater — a model that shows a real
-                downside is a model that can be trusted. Because P&amp;A is stage-gated, the full
-                $2M never deploys in a soft launch; the actual downside is smaller than modeled.
-                Breakeven lands at roughly $5.2M in gross receipts.
+                Breakeven is approximately $5.2M in gross receipts across all streams. The
+                conservative case assumes full P&amp;A deployment; in practice the stage-gated
+                release means a soft launch never spends the full $2M, so the modeled downside
+                overstates actual downside.
               </p>
               <p className="text-dim text-xs leading-relaxed">
                 Foreign presales against the name cast can be closed pre-production to reduce the
@@ -300,8 +336,8 @@ export default function FinancingSection() {
                 directly, accelerating their recoupment clock.
               </p>
               <p className="text-dim text-xs leading-relaxed italic">
-                Planning estimates for discussion — not projections, and not an offer of
-                securities. Actual results depend on release performance.
+                All figures are planning estimates for investor discussion — not projections and
+                not an offer to sell securities. Full model and waterfall available on request.
               </p>
             </div>
           </div>
