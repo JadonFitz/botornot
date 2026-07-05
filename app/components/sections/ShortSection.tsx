@@ -98,16 +98,16 @@ export default function ShortSection() {
 
           <FadeIn delay={0.14}>
             <a
-              href="https://www.youtube.com/watch?v=KybQ0SDiDAk"
+              href="https://youtu.be/LdkvaQd8ySc"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative block aspect-video border border-line overflow-hidden"
-              aria-label="Watch the Bot or Not official trailer on YouTube"
+              aria-label="Watch the Bot or Not short film on YouTube"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/trailer-poster.jpg"
-                alt="Bot or Not — Official Trailer"
+                alt="Bot or Not — Short Film"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-black/25 group-hover:bg-black/10 transition-colors duration-200" />
@@ -124,7 +124,7 @@ export default function ShortSection() {
               <div className="absolute bottom-5 left-5 flex items-center gap-3 pointer-events-none">
                 <span className="block w-4 h-px bg-red-600" />
                 <span className="text-[10px] tracking-[0.28em] uppercase text-fg/75">
-                  Official Trailer
+                  Watch the Short Film
                 </span>
               </div>
             </a>
