@@ -88,19 +88,13 @@ export default function ShortSection() {
                 </h3>
                 {/* PLACEHOLDER: Additional press links — Bloody Disgusting, The Fan Carpet, etc. Jadon to provide URLs. */}
                 <div className="border border-line">
-                  <div className="overflow-hidden aspect-[4/3]">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src="/fangoria-coverage.jpg"
-                      alt="Fangoria article — Exclusive Trailer: Love Island Meets Androids in Sci-Fi Thriller Short Bot or Not"
-                      className="w-full h-full object-cover object-top"
-                    />
-                  </div>
-                  <div className="p-5">
-                    <p className="text-fg text-sm leading-snug mb-2">
-                      &ldquo;Exclusive Trailer: LOVE ISLAND Meets Androids In Sci-Fi Thriller
-                      Short BOT OR NOT&rdquo;
-                    </p>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/fangoria-coverage.jpg"
+                    alt="Fangoria article — Exclusive Trailer: LOVE ISLAND Meets Androids In Sci-Fi Thriller Short BOT OR NOT"
+                    className="w-full h-auto"
+                  />
+                  <div className="px-5 py-3 border-t border-line">
                     <a
                       href="https://www.fangoria.com/bot-or-not-exclusive-trailer/"
                       target="_blank"
