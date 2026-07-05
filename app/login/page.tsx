@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import LoginForm from './LoginForm'
+import SignupForm from './SignupForm'
 
 export const metadata: Metadata = {
   title: 'Investor Access — Bot or Not',
@@ -24,6 +25,18 @@ export default function LoginPage() {
         />
 
         <LoginForm />
+
+        {/* Fan signup */}
+        <div className="w-full mt-14">
+          <div className="flex items-center gap-4 mb-6">
+            <div className="flex-1 h-px bg-white/20" />
+            <span className="text-[9px] tracking-[0.35em] uppercase text-white/50 shrink-0">
+              Sign up for updates
+            </span>
+            <div className="flex-1 h-px bg-white/20" />
+          </div>
+          <SignupForm />
+        </div>
       </div>
     </div>
   )
