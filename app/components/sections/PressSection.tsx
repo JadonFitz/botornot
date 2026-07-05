@@ -21,16 +21,20 @@ const jadonCredits = [
 
 const meghanCredits = [
   {
-    title: 'Lookout',
-    note: 'Jackrabbit Studios, 2025',
+    title: 'Stiletto',
+    note: 'Acquired by Eli Roth — 2026 wide theatrical release, alongside Colleen Camp',
+  },
+  {
+    title: 'Bloom',
+    note: 'Lead — psychological thriller, Jackrabbit Studios, packaging for Cannes',
+  },
+  {
+    title: 'Devilreaux',
+    note: 'Lionsgate — studio horror',
   },
   {
     title: 'I Am Your Biggest Fan',
     note: 'Lifetime — covered by Bloody Disgusting',
-  },
-  {
-    title: 'Bloom',
-    note: 'Jackrabbit Studios, 2026',
   },
 ]
 

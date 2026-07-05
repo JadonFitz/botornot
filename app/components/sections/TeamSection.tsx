@@ -70,11 +70,19 @@ export default function TeamSection() {
               </div>
               <h3 className="font-serif text-xl text-fg mb-1">Meghan Carrasquillo</h3>
               <p className="text-[11px] tracking-[0.2em] uppercase text-accent mb-5">Writer / Lead</p>
-              {/* PLACEHOLDER: Final writer/lead bio — 80-120 words. Meghan to provide. */}
-              <p className="text-dim text-sm leading-relaxed italic">
-                [PLACEHOLDER: Writer/lead bio — 80–120 words. Key credits: <em>Lookout</em> (Jackrabbit
-                Studios, 2025), <em>I Am Your Biggest Fan</em> (Lifetime), <em>Bloom</em> (Jackrabbit
-                Studios, 2026). Writer of the <em>Bot or Not</em> feature screenplay.]
+              <p className="text-dim text-sm leading-relaxed">
+                Drawn to bold, magnetic characters, Meghan brings a grounded, emotionally precise
+                presence to leading roles across film and television. Recent projects include{' '}
+                <em>Stiletto</em> — acquired by Eli Roth for a 2026 wide theatrical release — in
+                which she stars as &ldquo;Headphones&rdquo; alongside Academy Award nominee
+                Colleen Camp. She also leads the psychological thriller <em>Bloom</em>, currently
+                being packaged for Cannes, stars in the drama <em>Four</em> opposite Spencer
+                Breslin and Stacey Dash, and previously starred in Lionsgate&rsquo;s{' '}
+                <em>Devilreaux</em>, solidifying her presence in the studio horror space. In
+                addition to acting, Meghan writes, directs, and produces original features,
+                bringing a filmmaker&rsquo;s eye to every performance. She is currently developing
+                multiple elevated genre films, continuing to establish herself as a distinctive
+                voice both in front of and behind the camera.
               </p>
             </div>
           </FadeIn>
