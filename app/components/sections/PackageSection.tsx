@@ -18,7 +18,7 @@ const packageItems: PackageItem[] = [
   },
   {
     label: 'Production Geography / Soft Money',
-    note: 'Lexington, Kentucky — based at Lex Studios (three stages, standing sets, offices). Kentucky Entertainment Incentive: refundable credit of 35% on resident labor and 30% on non-resident labor and Kentucky vendor spend, modeled to return ~18–19% of gross budget as cash post-audit.',
+    note: 'Lexington, Kentucky — based at Lex Studios (three stages, standing sets, offices). Kentucky Entertainment Incentive: refundable credit of 35% on resident labor and 30% on non-resident labor and Kentucky vendor spend, modeled to return ~19% of the production budget as cash post-audit.',
   },
   {
     label: 'Action Choreographer / 2nd Unit Director',
