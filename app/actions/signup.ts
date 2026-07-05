@@ -1,5 +1,7 @@
 'use server'
 
+import { sendNotification } from './email'
+
 export interface SignupState {
   success?: boolean
   error?: string
@@ -20,10 +22,18 @@ export async function signupAction(
     return { error: 'Please enter a valid email address.' }
   }
 
-  // TODO: Wire up email list provider
+  // TODO: Optionally add signups to a proper list provider later
   // Resend example: await resend.contacts.create({ email, audienceId: process.env.RESEND_AUDIENCE_ID })
-  // Mailchimp example: await mailchimp.lists.addListMember(process.env.MAILCHIMP_LIST_ID, { email_address: email, status: 'subscribed' })
-  console.log('[Bot or Not — Fan Signup]', { email, timestamp: new Date().toISOString() })
+  const sent = await sendNotification(
+    'New fan signup — Bot or Not',
+    `Email: ${email}\nSubmitted: ${new Date().toISOString()}`
+  )
+  if (!sent) {
+    console.log('[Bot or Not — Fan Signup — EMAIL NOT DELIVERED]', {
+      email,
+      timestamp: new Date().toISOString(),
+    })
+  }
 
   return { success: true }
 }
