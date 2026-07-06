@@ -153,9 +153,15 @@ export default function ContactSection() {
                 </h3>
                 <a
                   href="mailto:jadon@newterraincreative.com"
-                  className="text-fg text-sm hover:text-accent transition-colors duration-200"
+                  className="block text-fg text-sm hover:text-accent transition-colors duration-200"
                 >
                   jadon@newterraincreative.com
+                </a>
+                <a
+                  href="mailto:meghan@newterraincreative.com"
+                  className="block mt-1.5 text-fg text-sm hover:text-accent transition-colors duration-200"
+                >
+                  meghan@newterraincreative.com
                 </a>
               </div>
 

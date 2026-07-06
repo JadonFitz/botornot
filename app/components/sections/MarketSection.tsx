@@ -75,7 +75,7 @@ export default function MarketSection() {
                 grammar, and lead performance are already on screen at festival-winning quality,
                 built on a micro budget. The feature steps everything up on every level: a $3M
                 production with LED volume work, purpose-built stage worlds, 200&ndash;300 VFX
-                shots, and a name cast. The short is the floor, not the ceiling.
+                shots, and name cast members. The short is the floor, not the ceiling.
               </p>
               <div className="border border-line p-4">
                 <p className="text-[10px] tracking-[0.2em] uppercase text-accent mb-2">

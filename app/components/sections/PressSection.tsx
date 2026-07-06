@@ -3,11 +3,16 @@ import FadeIn from '../FadeIn'
 const jadonCredits = [
   {
     title: 'Off Rip',
-    note: 'Grand Jury Award: Gasparilla International Film Festival, 2025',
+    note: 'Grand Jury Award: Gasparilla International Film Festival, 2025 · U.S. Fiction Grand Jury Award: Orlando International Film Festival',
   },
   {
-    title: 'Off Rip',
-    note: 'U.S. Fiction Grand Jury Award: Orlando International Film Festival',
+    title: 'Stream',
+    note: 'From the Leavy Brothers, producers of Terrifier. USA-wide theatrical release, now streaming; a sequel is growing the franchise. Reviewed in Variety',
+    href: 'https://variety.com/2024/film/reviews/stream-review-michael-leavy-terrifier-producers-1236109966/',
+  },
+  {
+    title: 'Florida Wild',
+    note: 'Upcoming Western, starring. Acquired by Angel Studios; theatrical release expected late 2026',
   },
   {
     title: "Robbie Ain't Right No More",
@@ -55,11 +60,6 @@ const shortCredits = [
     title: 'Fangoria',
     note: 'Exclusive trailer debut',
     href: 'https://www.fangoria.com/bot-or-not-exclusive-trailer/',
-  },
-  {
-    title: 'Additional Press',
-    note: '[PLACEHOLDER: Additional coverage - Jadon to provide]',
-    placeholder: true,
   },
 ]
 
