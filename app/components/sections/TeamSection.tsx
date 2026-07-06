@@ -103,9 +103,9 @@ export default function TeamSection() {
             <h3 className="text-[11px] tracking-[0.25em] uppercase text-dim mb-4">
               Producers / Executive Producers
             </h3>
-            {/* PLACEHOLDER: Populate as packaging completes. New Terrain Creative LLC produces. */}
-            <p className="text-dim italic text-sm">
-              [PLACEHOLDER: To be filled as packaging completes. New Terrain Creative LLC produces.]
+            <p className="text-dim text-sm leading-relaxed">
+              New Terrain Creative produces. Key producing team additions in development; to be
+              announced as packaging completes.
             </p>
           </div>
         </FadeIn>
