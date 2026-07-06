@@ -17,6 +17,18 @@ export const metadata: Metadata = {
   title: 'Bot or Not | Investor Overview',
   description: 'A contained sci-fi thriller. $5M raise fully capitalized through theatrical release. Investor information available upon request.',
   robots: { index: false, follow: false },
+  openGraph: {
+    title: 'Bot or Not',
+    description: 'Not every connection is human. A contained sci-fi thriller from New Terrain Creative.',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Bot or Not' }],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Bot or Not',
+    description: 'Not every connection is human. A contained sci-fi thriller from New Terrain Creative.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 export default function RootLayout({
