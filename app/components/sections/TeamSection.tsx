@@ -50,9 +50,9 @@ export default function TeamSection() {
                 Director / Creative Strategist
               </p>
               <p className="text-dim text-sm leading-relaxed">
-                Jadon Cal Fitzpatrick builds films from the ground up, writing, starring in, and
-                editing his own projects with a hands-on command that gives his work a raw,
-                personal intensity. His feature directorial debut <em>Off Rip</em> (2025) won the
+                Jadon Cal Fitzpatrick builds films from the ground up, having written, starred
+                in, directed, and edited his own projects with a hands-on command that gives his
+                work a raw, personal intensity. His sophomore feature <em>Off Rip</em> (2025) won the
                 Grand Jury Award at the Gasparilla International Film Festival and the U.S.
                 Fiction Grand Jury Award at the Orlando International Film Festival. As
                 co-director of the <em>Bot or Not</em> short, he helped drive the project to a

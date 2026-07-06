@@ -84,3 +84,8 @@ body {
     scroll-behavior: auto !important;
   }
 }
+
+/* Italic titles: the italic slant visually swallows the following space; add slight breathing room */
+em {
+  margin-right: 0.09em;
+}
