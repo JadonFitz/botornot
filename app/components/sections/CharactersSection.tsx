@@ -4,6 +4,7 @@ interface Character {
   name: string
   role: string
   cast?: string
+  nameSlot?: boolean
   text: string
 }
 
@@ -29,16 +30,19 @@ const characters: Character[] = [
   {
     name: 'Aiden S1/S2',
     role: 'The Romantic Focus',
+    nameSlot: true,
     text: 'A former marine turned thrill-seeker, living life on the edge because he knows how fragile it can be. On BOT OR NOT he exists in two versions, one robot and one human, both embodying the same daring spirit. Aiden becomes both Juliet’s emotional anchor and the catalyst for her exploration of love, trust, and the blurred line between human and artificial intelligence.',
   },
   {
     name: 'Vera',
     role: 'CEO of VANTIS',
+    nameSlot: true,
     text: 'The visionary CEO of VANTIS, the cutting-edge tech company behind BOT OR NOT. Brilliant, meticulous, and strategic, she orchestrates the show from behind the scenes. To the outside world she appears supportive and inspiring, but her true motives are calculated and enigmatic, making her both a mentor and a potential adversary to Juliet.',
   },
   {
     name: 'Rhett',
     role: 'The Fiancé',
+    nameSlot: true,
     text: 'Juliet’s beloved fiancé, whose disappearance haunts her throughout the story. Unknown to Juliet, he is secretly involved in the larger scheme of BOT OR NOT and VANTIS’ plans, making him a pivotal figure in the show’s true agenda whose presence drives Juliet’s emotional stakes and adds layers of mystery and betrayal.',
   },
   {
@@ -88,7 +92,9 @@ export default function CharactersSection() {
           <p className="text-dim text-sm mb-14 max-w-xl leading-relaxed">
             Juliet, Declan Callum, and Blair are cast. All other roles will be cast through
             auditions; talent references in the pitch deck are aspirational benchmarks for tone
-            and archetype, not locked cast.
+            and archetype, not locked cast. Rhett, Aiden S1/S2, and Vera are structured as
+            potential name-talent slots, with a limited-days name attachment carried in the
+            budget.
           </p>
         </FadeIn>
 
@@ -101,6 +107,10 @@ export default function CharactersSection() {
                 {c.cast ? (
                   <p className="text-[11px] tracking-[0.15em] uppercase text-accent mb-4">
                     {c.cast} · Cast in Place
+                  </p>
+                ) : c.nameSlot ? (
+                  <p className="text-[11px] tracking-[0.15em] uppercase text-accent/80 mb-4">
+                    Potential Name Attachment
                   </p>
                 ) : (
                   <p className="text-[11px] tracking-[0.15em] uppercase text-dim/60 mb-4">

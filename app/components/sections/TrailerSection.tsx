@@ -10,8 +10,16 @@ export default function TrailerSection() {
 
   return (
     <section id="trailer" className="py-16 px-6">
-      <div className="max-w-[76rem] mx-auto">
+      <div className="max-w-4xl mx-auto">
         <FadeIn>
+          <h2
+            className="font-serif font-normal text-fg leading-tight mb-8 text-center"
+            style={{ fontSize: 'clamp(1.75rem, 4.5vw, 2.75rem)' }}
+          >
+            Official Trailer
+          </h2>
+        </FadeIn>
+        <FadeIn delay={0.06}>
           <div className="relative w-full overflow-hidden" style={{ aspectRatio: '16/9' }}>
             {playing ? (
               <iframe
@@ -48,12 +56,6 @@ export default function TrailerSection() {
                   </div>
                 </button>
 
-                <div className="absolute bottom-5 left-5 flex items-center gap-3 pointer-events-none">
-                  <span className="block w-4 h-px bg-red-600" />
-                  <span className="text-[10px] tracking-[0.28em] uppercase text-fg/75">
-                    Official Trailer
-                  </span>
-                </div>
               </>
             )}
           </div>
