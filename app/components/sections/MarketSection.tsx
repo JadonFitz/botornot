@@ -73,7 +73,7 @@ export default function MarketSection() {
                 The short film exists, and it answers the single largest question financiers ask
                 of sci-fi-adjacent projects: what could this look like? The visual world, tonal
                 grammar, and lead performance are already on screen at festival-winning quality,
-                built on a $35K budget. The feature steps everything up on every level: a $3M
+                built on a micro budget. The feature steps everything up on every level: a $3M
                 production with LED volume work, purpose-built stage worlds, 200&ndash;300 VFX
                 shots, and a name cast. The short is the floor, not the ceiling.
               </p>
