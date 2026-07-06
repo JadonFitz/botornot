@@ -23,9 +23,12 @@ export default function TeamSection() {
         {/* Positioning frame */}
         <FadeIn delay={0.08}>
           <p className="text-fg text-base leading-[1.85] max-w-xl mb-16 pl-5 border-l-2 border-accent">
-            Bot or Not is led by a director-actor and writer-lead pairing, a configuration
-            acquisitions executives have publicly described as easier to work with than traditional
-            filmmaker-only teams. Jadon and Meghan bring both sides of the camera to every decision.
+            Bot or Not is led by a director / creative strategist and writer / lead pairing, a
+            configuration acquisitions executives have publicly described as easier to work with
+            than traditional filmmaker-only teams. This is Jadon and Meghan&rsquo;s sixth film
+            together in an ongoing creative partnership that spans many collaborations. Together
+            they run New Terrain Creative, a professional media and production house telling
+            stories for clients across many industries.
           </p>
         </FadeIn>
 
@@ -43,7 +46,9 @@ export default function TeamSection() {
                 />
               </div>
               <h3 className="font-serif text-xl text-fg mb-1">Jadon Cal Fitzpatrick</h3>
-              <p className="text-[11px] tracking-[0.2em] uppercase text-accent mb-5">Director</p>
+              <p className="text-[11px] tracking-[0.2em] uppercase text-accent mb-5">
+                Director / Creative Strategist
+              </p>
               <p className="text-dim text-sm leading-relaxed">
                 Jadon Cal Fitzpatrick builds films from the ground up, writing, starring in, and
                 editing his own projects with a hands-on command that gives his work a raw,
