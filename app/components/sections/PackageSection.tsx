@@ -14,7 +14,8 @@ const packageItems: PackageItem[] = [
   },
   {
     label: 'Sales Agent / Distribution Path',
-    note: '[PLACEHOLDER: Populate as locked. Jackrabbit Media currently handling Bloom worldwide sales, potential connection point.]',
+    status: 'In Talks',
+    note: 'Currently weighing options and in talks with multiple distributors and sales agents to determine the best sales and acquisitions strategy, pending financing commitments and a significant cast attachment for presales.',
   },
   {
     label: 'Production Geography / Soft Money',
@@ -22,7 +23,7 @@ const packageItems: PackageItem[] = [
   },
   {
     label: 'Action Choreographer / 2nd Unit Director',
-    note: '[PLACEHOLDER: Populate as locked. At PG-13 action scale, this attachment carries equivalent strategic weight to cast.]',
+    note: 'Exploring options; attachment to be locked as packaging completes and financing closes.',
   },
 ]
 

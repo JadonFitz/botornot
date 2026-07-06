@@ -70,10 +70,12 @@ export default function MarketSection() {
                 The Proof-of-Concept Advantage
               </h3>
               <p className="text-fg text-sm leading-[1.9] mb-6">
-                The short film exists. Buyers and investors do not have to imagine what Bot or Not
-                looks like. The visual world, tonal grammar, and lead performance are already on
-                screen, at festival-winning quality. This closes the single largest question
-                financiers ask of sci-fi-adjacent projects.
+                The short film exists, and it answers the single largest question financiers ask
+                of sci-fi-adjacent projects: what could this look like? The visual world, tonal
+                grammar, and lead performance are already on screen at festival-winning quality,
+                built on a $35K budget. The feature steps everything up on every level: a $3M
+                production with LED volume work, purpose-built stage worlds, 200&ndash;300 VFX
+                shots, and a name cast. The short is the floor, not the ceiling.
               </p>
               <div className="border border-line p-4">
                 <p className="text-[10px] tracking-[0.2em] uppercase text-accent mb-2">

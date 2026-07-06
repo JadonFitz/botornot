@@ -124,10 +124,6 @@ export default function TeamSection() {
                 </div>
               ))}
             </div>
-            <p className="text-dim text-xs mt-4">
-              Note: Action choreographer / 2nd unit attachment carries equivalent strategic weight
-              to cast at PG-13 action scale.
-            </p>
           </div>
         </FadeIn>
       </div>
