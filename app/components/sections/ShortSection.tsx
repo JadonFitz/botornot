@@ -109,9 +109,21 @@ export default function ShortSection() {
             </FadeIn>
           </div>
 
-          <FadeIn delay={0.14}>
-            <ShortFilmPlayer />
-          </FadeIn>
+          <div>
+            <FadeIn delay={0.14}>
+              <ShortFilmPlayer />
+            </FadeIn>
+            <FadeIn delay={0.18}>
+              <div className="mt-6 border border-line">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/poster.jpg"
+                  alt="Bot or Not official poster. Not every connection is human."
+                  className="w-full h-auto"
+                />
+              </div>
+            </FadeIn>
+          </div>
         </div>
 
         {/* Proof of demand */}
