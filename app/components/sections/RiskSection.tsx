@@ -4,7 +4,7 @@ const risks = [
   {
     risk: 'Indie market saturation',
     mitigation:
-      'Single-genre clarity, festival validation, proof-of-concept short complete. The Hunger Games / Divergent lane is a recognized category — Bot or Not is positioned to feel inevitable, not invented.',
+      'Single-genre clarity, festival validation, proof-of-concept short complete. The Hunger Games / Divergent lane is a recognized category; Bot or Not is positioned to feel inevitable, not invented.',
   },
   {
     risk: 'Sci-fi presale resistance',
@@ -19,7 +19,7 @@ const risks = [
   {
     risk: 'P&A coverage post-release',
     mitigation:
-      'Theatrical strategy modeled on the Hunting Matthew Nichols indie blueprint — $100K viable P&A tier, density-over-scale 20-market approach, 90-day execution timeline. Theatrical treated as pricing mechanism, not profit center.',
+      'Theatrical strategy modeled on the Hunting Matthew Nichols indie blueprint: $100K viable P&A tier, density-over-scale 20-market approach, 90-day execution timeline. Theatrical treated as pricing mechanism, not profit center.',
   },
   {
     risk: 'Distribution deal terms',
@@ -43,14 +43,14 @@ export default function RiskSection() {
     <section id="risk" className="py-28 md:py-36 border-t border-line">
       <div className="max-w-[76rem] mx-auto px-6">
         <FadeIn>
-          <p className="text-[11px] tracking-[0.3em] uppercase text-dim mb-5">§ 10 — Risk</p>
+          <p className="text-[11px] tracking-[0.3em] uppercase text-dim mb-5">§ 10 · Risk</p>
           <h2 className="font-serif font-normal text-fg leading-tight mb-4"
             style={{ fontSize: 'clamp(2rem, 5vw, 3.25rem)' }}>
             Risk &amp; Mitigation
           </h2>
           <p className="text-dim text-sm mb-14 max-w-xl leading-relaxed">
             Professional financing processes anticipate risk. Each entry below represents active
-            thinking — not boilerplate.
+            thinking, not boilerplate.
           </p>
         </FadeIn>
 

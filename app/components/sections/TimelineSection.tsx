@@ -4,7 +4,7 @@ const phases = [
   {
     phase: 'Funds Close',
     current: true,
-    items: ['Raise closes — triggers everything', 'AFM foreign presales follow (Nov)'],
+    items: ['Raise closes; triggers everything', 'AFM foreign presales follow (Nov)'],
     date: 'Sept – Oct 2026',
   },
   {
@@ -16,7 +16,7 @@ const phases = [
   {
     phase: 'Pre-Production',
     current: false,
-    items: ['VAD / Unreal environments — full 8–12 wks', 'Name cast closes', 'Crew attachments'],
+    items: ['VAD / Unreal environments, full 8–12 wks', 'Name cast closes', 'Crew attachments'],
     date: 'Jan – Mar 2027',
   },
   {
@@ -28,7 +28,7 @@ const phases = [
   {
     phase: 'Post-Production',
     current: false,
-    items: ['Picture lock ~Sept', 'VFX the long pole — 200–300 shots', 'Sound & DI through fall'],
+    items: ['Picture lock ~Sept', 'VFX the long pole: 200–300 shots', 'Sound & DI through fall'],
     date: 'June 2027 – Jan 2028',
   },
   {
@@ -62,13 +62,13 @@ export default function TimelineSection() {
     <section id="timeline" className="py-28 md:py-36 border-t border-line">
       <div className="max-w-[76rem] mx-auto px-6">
         <FadeIn>
-          <p className="text-[11px] tracking-[0.3em] uppercase text-dim mb-5">§ 09 — Timeline</p>
+          <p className="text-[11px] tracking-[0.3em] uppercase text-dim mb-5">§ 09 · Timeline</p>
           <h2 className="font-serif font-normal text-fg leading-tight mb-6"
             style={{ fontSize: 'clamp(2rem, 5vw, 3.25rem)' }}>
             Timeline
           </h2>
           <p className="text-fg text-base leading-[1.85] max-w-2xl mb-14 pl-5 border-l-2 border-accent">
-            Mapped backwards from release — the release date is the decision that disciplines
+            Mapped backwards from release, because the release date is the decision that disciplines
             everything else. The one date promised to investors: a 2028 release.
           </p>
         </FadeIn>
@@ -141,29 +141,29 @@ export default function TimelineSection() {
         <FadeIn delay={0.1}>
           <div className="mt-20 max-w-4xl">
             <h3 className="text-[11px] tracking-[0.25em] uppercase text-accent mb-6">
-              The Premiere Fork — Two Legitimate Paths
+              The Premiere Fork: Two Legitimate Paths
             </h3>
             <div className="grid md:grid-cols-2 gap-px bg-line border border-line mb-8">
               <div className="bg-bg p-7">
                 <p className="text-[10px] tracking-[0.25em] uppercase text-dim mb-2">Path A</p>
-                <h4 className="font-serif text-xl text-fg mb-1">SXSW — March 2028</h4>
+                <h4 className="font-serif text-xl text-fg mb-1">SXSW · March 2028</h4>
                 <p className="text-dim text-xs mb-4">Submit late October 2027 · rough cuts accepted</p>
                 <p className="text-dim text-sm leading-[1.8]">
-                  An AI-paranoia thriller at SXSW is thematically home — that audience and press
+                  An AI-paranoia thriller at SXSW is thematically home. That audience and press
                   corps live at the film/tech intersection, and &ldquo;which one is the
                   bot&rdquo; is a headline the trades write themselves. Theatrical follows
-                  April/May into the post-Oscar counterprogramming window, PVOD by summer — and
+                  April/May into the post-Oscar counterprogramming window, PVOD by summer, and
                   investors reach revenue roughly six months faster.
                 </p>
               </div>
               <div className="bg-bg p-7">
                 <p className="text-[10px] tracking-[0.25em] uppercase text-dim mb-2">Path B</p>
-                <h4 className="font-serif text-xl text-fg mb-1">Fantastic Fest — Sept 2028</h4>
+                <h4 className="font-serif text-xl text-fg mb-1">Fantastic Fest · Sept 2028</h4>
                 <p className="text-dim text-xs mb-4">The genre-establishment launchpad</p>
                 <p className="text-dim text-sm leading-[1.8]">
                   Deeply aligned with the short&rsquo;s Screamfest / FilmQuest / Fangoria
-                  pedigree. Theatrical lands in the October genre corridor — spooky-season
-                  counterprogramming without competing against pure horror — and PVOD hits the
+                  pedigree. Theatrical lands in the October genre corridor, spooky-season
+                  counterprogramming without competing against pure horror, and PVOD hits the
                   November–December holiday buying surge, the single best transactional window
                   of the year. Stronger commercial sequencing; six more months of carry.
                 </p>
@@ -171,7 +171,7 @@ export default function TimelineSection() {
             </div>
             <p className="text-dim text-sm leading-[1.85] max-w-2xl">
               The plan: build for both, decide at picture lock. Submit to SXSW in October 2027
-              with the best cut in hand — if accepted, the film premieres at the perfect
+              with the best cut in hand. If accepted, the film premieres at the perfect
               thematic festival and recoups early; if not, it finishes at full polish and aims
               for the fall 2028 genre circuit, where the October theatrical window is arguably
               stronger anyway. The only cost of keeping both paths open is a submission fee.
@@ -186,11 +186,11 @@ export default function TimelineSection() {
               Two Rooms That Don&rsquo;t Wait for the Film
             </h3>
             <p className="text-fg text-sm leading-[1.85]">
-              <span className="text-accent">AFM, November 2026</span> — two months after funds
+              <span className="text-accent">AFM, November 2026</span>: two months after funds
               close, before a frame is shot. With the name attached and the short&rsquo;s
               laurels, foreign presales can close real money against territories and directly
               de-risk the raise.{' '}
-              <span className="text-accent">Cannes Marché, May 2027</span> — hits right as the
+              <span className="text-accent">Cannes Marché, May 2027</span>: hits right as the
               shoot wraps; a promo reel cut from dailies goes to market while the film is still
               in camera.
             </p>

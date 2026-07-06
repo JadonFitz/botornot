@@ -1,7 +1,7 @@
 import FadeIn from '../FadeIn'
 import ShortFilmPlayer from '../ShortFilmPlayer'
 
-// Analytics as of July 4, 2026 — screenshots in data room. Update as numbers grow.
+// Analytics as of July 4, 2026 - screenshots in data room. Update as numbers grow.
 const demandStats = [
   {
     stat: '168K+',
@@ -15,13 +15,13 @@ const demandStats = [
   },
   {
     stat: '20K',
-    label: 'Instagram views — one trailer post',
+    label: 'Instagram views, one trailer post',
     note: '578 likes · 193 comments from a single organic post',
   },
   {
     stat: '8:55',
     label: 'Average view duration',
-    note: 'On a 21-minute short — sustained engagement, not drive-by clicks',
+    note: 'On a 21-minute short. Sustained engagement, not drive-by clicks',
   },
   {
     stat: 'US · CA · UK',
@@ -31,9 +31,9 @@ const demandStats = [
 ]
 
 const laurels = [
-  { fest: 'Screamfest', note: 'World Premiere — TCL Chinese Theatre, 2025' },
-  { fest: 'Lois Weber Film Festival', note: 'Winner — Best Sci-Fi' },
-  { fest: 'FilmQuest', note: 'Nominee — Best Ensemble & Best Sci-Fi' },
+  { fest: 'Screamfest', note: 'World Premiere: TCL Chinese Theatre, 2025' },
+  { fest: 'Lois Weber Film Festival', note: 'Winner: Best Sci-Fi' },
+  { fest: 'FilmQuest', note: 'Nominee: Best Ensemble & Best Sci-Fi' },
 ]
 
 export default function ShortSection() {
@@ -41,7 +41,7 @@ export default function ShortSection() {
     <section id="short" className="py-28 md:py-36 border-t border-line">
       <div className="max-w-[76rem] mx-auto px-6">
         <FadeIn>
-          <p className="text-[11px] tracking-[0.3em] uppercase text-dim mb-5">§ 04 — The Short</p>
+          <p className="text-[11px] tracking-[0.3em] uppercase text-dim mb-5">§ 04 · The Short</p>
           <h2 className="font-serif font-normal text-fg leading-tight mb-3"
             style={{ fontSize: 'clamp(2rem, 5vw, 3.25rem)' }}>
             The Proof of Concept
@@ -86,12 +86,12 @@ export default function ShortSection() {
                 <h3 className="text-[11px] tracking-[0.25em] uppercase text-dim mb-4">
                   Press Coverage
                 </h3>
-                {/* PLACEHOLDER: Additional press links — Bloody Disgusting, The Fan Carpet, etc. Jadon to provide URLs. */}
+                {/* PLACEHOLDER: Additional press links - Bloody Disgusting, The Fan Carpet, etc. Jadon to provide URLs. */}
                 <div className="border border-line">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/fangoria-coverage.jpg"
-                    alt="Fangoria article — Exclusive Trailer: LOVE ISLAND Meets Androids In Sci-Fi Thriller Short BOT OR NOT"
+                    alt="Fangoria article: Exclusive Trailer: LOVE ISLAND Meets Androids In Sci-Fi Thriller Short BOT OR NOT"
                     className="w-full h-auto"
                   />
                   <div className="px-5 py-3 border-t border-line">
@@ -118,7 +118,7 @@ export default function ShortSection() {
         <FadeIn delay={0.1}>
           <div className="mt-24 border-t border-line pt-12">
             <h3 className="text-[11px] tracking-[0.25em] uppercase text-accent mb-3">
-              Proof of Demand — 100% Organic
+              Proof of Demand: 100% Organic
             </h3>
             <div className="mb-10">
               <p className="font-serif text-fg font-normal leading-none mb-3"
@@ -133,7 +133,7 @@ export default function ShortSection() {
             <p className="text-fg text-base leading-[1.85] max-w-2xl mb-10">
               In late June 2026, the short was uploaded to YouTube and shared once on Reddit&rsquo;s
               r/Filmmakers. With zero paid spend, the post became the #2 post of the day and the
-              audience followed the film across platforms — 338,300+ impressions across Reddit,
+              audience followed the film across platforms: 338,300+ impressions across Reddit,
               YouTube, and Instagram, and climbing. The demand question investors ask of any
               concept, answered with data.
             </p>
@@ -154,11 +154,11 @@ export default function ShortSection() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/yt-analytics.jpg"
-                alt="YouTube analytics dashboard for the Bot or Not short film — 150.3K impressions, 12K views, 9.7K unique viewers since June 25, 2026"
+                alt="YouTube analytics dashboard for the Bot or Not short film: 150.3K impressions, 12K views, 9.7K unique viewers since June 25, 2026"
                 className="w-full h-auto"
               />
               <p className="text-dim text-xs px-5 py-3 border-t border-line">
-                YouTube analytics, June 25 – July 4, 2026 — 150.3K impressions, 12K views, 9.7K
+                YouTube analytics, June 25 – July 4, 2026: 150.3K impressions, 12K views, 9.7K
                 unique viewers, driven almost entirely by YouTube&rsquo;s own recommendation
                 engine.
               </p>
@@ -171,7 +171,7 @@ export default function ShortSection() {
                 interest for a feature.&rdquo;
               </p>
               <p className="text-dim text-xs">
-                Top comment on the Reddit post — a working producer · 201 upvotes
+                Top comment on the Reddit post, from a working producer · 201 upvotes
               </p>
             </div>
 

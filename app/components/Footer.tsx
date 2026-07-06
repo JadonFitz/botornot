@@ -6,7 +6,7 @@ export default function Footer() {
           © {new Date().getFullYear()} New Terrain Creative LLC. All rights reserved.
         </p>
         <p className="text-dim text-[11px] tracking-wide">
-          Confidential — for authorized recipients only.
+          Confidential. For authorized recipients only.
         </p>
       </div>
     </footer>

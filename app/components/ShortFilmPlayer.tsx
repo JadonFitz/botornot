@@ -15,7 +15,7 @@ export default function ShortFilmPlayer() {
           className="absolute inset-0 w-full h-full"
           allow="autoplay; encrypted-media; fullscreen"
           allowFullScreen
-          title="Bot or Not — Short Film"
+          title="Bot or Not | Short Film"
         />
       ) : (
         <button
@@ -26,7 +26,7 @@ export default function ShortFilmPlayer() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/trailer-poster.jpg"
-            alt="Bot or Not — Short Film"
+            alt="Bot or Not | Short Film"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/25 group-hover:bg-black/10 transition-colors duration-200" />

@@ -3,11 +3,11 @@ import FadeIn from '../FadeIn'
 const jadonCredits = [
   {
     title: 'Off Rip',
-    note: 'Grand Jury Award — Gasparilla International Film Festival, 2025',
+    note: 'Grand Jury Award: Gasparilla International Film Festival, 2025',
   },
   {
     title: 'Off Rip',
-    note: 'U.S. Fiction Grand Jury Award — Orlando International Film Festival',
+    note: 'U.S. Fiction Grand Jury Award: Orlando International Film Festival',
   },
   {
     title: "Robbie Ain't Right No More",
@@ -15,41 +15,41 @@ const jadonCredits = [
   },
   {
     title: 'Bloom',
-    note: 'Jackrabbit Studios — Cannes Market 2026, covered by Bloody Disgusting',
+    note: 'Jackrabbit Studios: Cannes Market 2026, covered by Bloody Disgusting',
   },
 ]
 
 const meghanCredits = [
   {
     title: 'Stiletto',
-    note: 'Acquired by Eli Roth — 2026 wide theatrical release, alongside Colleen Camp',
+    note: 'Acquired by Eli Roth: 2026 wide theatrical release, alongside Colleen Camp',
   },
   {
     title: 'Bloom',
-    note: 'Lead — psychological thriller, Jackrabbit Studios, packaging for Cannes',
+    note: 'Lead: psychological thriller, Jackrabbit Studios, packaging for Cannes',
   },
   {
     title: 'Devilreaux',
-    note: 'Lionsgate — studio horror',
+    note: 'Lionsgate: studio horror',
   },
   {
     title: 'I Am Your Biggest Fan',
-    note: 'Lifetime — covered by Bloody Disgusting',
+    note: 'Lifetime: covered by Bloody Disgusting',
   },
 ]
 
 const shortCredits = [
   {
     title: 'Screamfest',
-    note: 'World Premiere — TCL Chinese Theatre, 2025',
+    note: 'World Premiere: TCL Chinese Theatre, 2025',
   },
   {
     title: 'Lois Weber Film Festival',
-    note: 'Winner — Best Sci-Fi',
+    note: 'Winner: Best Sci-Fi',
   },
   {
     title: 'FilmQuest',
-    note: 'Nominee — Best Ensemble & Best Sci-Fi',
+    note: 'Nominee: Best Ensemble & Best Sci-Fi',
   },
   {
     title: 'Fangoria',
@@ -58,7 +58,7 @@ const shortCredits = [
   },
   {
     title: 'Additional Press',
-    note: '[PLACEHOLDER: Additional coverage — Jadon to provide]',
+    note: '[PLACEHOLDER: Additional coverage - Jadon to provide]',
     placeholder: true,
   },
 ]
@@ -104,7 +104,7 @@ export default function PressSection() {
     <section id="press" className="py-28 md:py-36 border-t border-line">
       <div className="max-w-[76rem] mx-auto px-6">
         <FadeIn>
-          <p className="text-[11px] tracking-[0.3em] uppercase text-dim mb-5">§ 11 — Press</p>
+          <p className="text-[11px] tracking-[0.3em] uppercase text-dim mb-5">§ 11 · Press</p>
           <h2 className="font-serif font-normal text-fg leading-tight mb-14"
             style={{ fontSize: 'clamp(2rem, 5vw, 3.25rem)' }}>
             Press &amp; Track Record

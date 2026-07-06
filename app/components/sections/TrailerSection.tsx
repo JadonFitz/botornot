@@ -19,7 +19,7 @@ export default function TrailerSection() {
                 className="absolute inset-0 w-full h-full"
                 allow="autoplay; encrypted-media; fullscreen"
                 allowFullScreen
-                title="Bot or Not — Official Trailer"
+                title="Bot or Not | Official Trailer"
               />
             ) : (
               <>
@@ -27,7 +27,7 @@ export default function TrailerSection() {
                 {/* This upload has no maxresdefault thumbnail on YouTube; sddefault is the largest that exists */}
                 <img
                   src={`https://img.youtube.com/vi/${VIDEO_ID}/sddefault.jpg`}
-                  alt="Bot or Not — Official Trailer thumbnail"
+                  alt="Bot or Not | Official Trailer thumbnail"
                   className="w-full h-full object-cover"
                 />
 

@@ -36,7 +36,7 @@ export default function HeroSection() {
 
         <FadeIn delay={0.24}>
           <p className="text-dim text-sm tracking-wide max-w-md mx-auto">
-            A cutting-edge AI reality dating show — where survival, not love, is the ultimate
+            A cutting-edge AI reality dating show, where survival, not love, is the ultimate
             challenge.
           </p>
         </FadeIn>

@@ -26,7 +26,7 @@ export async function contactAction(
     return { error: 'Please enter a valid email address.' }
   }
 
-  const subject = `Investor inquiry — ${name}${commitment ? ` (${commitment})` : ''}`
+  const subject = `Investor inquiry: ${name}${commitment ? ` (${commitment})` : ''}`
   const body = [
     `Name: ${name}`,
     `Email: ${email}`,
@@ -40,8 +40,8 @@ export async function contactAction(
 
   const sent = await sendNotification(subject, body, email)
   if (!sent) {
-    // Unconfigured or delivery failure — keep the payload in server logs so it isn't lost silently
-    console.log('[Bot or Not — Contact Inquiry — EMAIL NOT DELIVERED]', {
+    // Unconfigured or delivery failure - keep the payload in server logs so it isn't lost silently
+    console.log('[Bot or Not | Contact Inquiry | EMAIL NOT DELIVERED]', {
       name,
       email,
       company,

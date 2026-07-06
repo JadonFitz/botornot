@@ -25,11 +25,11 @@ export async function signupAction(
   // TODO: Optionally add signups to a proper list provider later
   // Resend example: await resend.contacts.create({ email, audienceId: process.env.RESEND_AUDIENCE_ID })
   const sent = await sendNotification(
-    'New fan signup — Bot or Not',
+    'New fan signup: Bot or Not',
     `Email: ${email}\nSubmitted: ${new Date().toISOString()}`
   )
   if (!sent) {
-    console.log('[Bot or Not — Fan Signup — EMAIL NOT DELIVERED]', {
+    console.log('[Bot or Not | Fan Signup | EMAIL NOT DELIVERED]', {
       email,
       timestamp: new Date().toISOString(),
     })

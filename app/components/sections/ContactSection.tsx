@@ -21,7 +21,7 @@ export default function ContactSection() {
       <section id="contact" className="py-28 md:py-36 border-t border-line">
         <div className="max-w-[76rem] mx-auto px-6">
           <FadeIn>
-            <p className="text-[11px] tracking-[0.3em] uppercase text-dim mb-5">§ 12 — Contact</p>
+            <p className="text-[11px] tracking-[0.3em] uppercase text-dim mb-5">§ 12 · Contact</p>
             <h2 className="font-serif font-normal text-fg leading-tight mb-8"
               style={{ fontSize: 'clamp(2rem, 5vw, 3.25rem)' }}>
               Next Steps
@@ -42,7 +42,7 @@ export default function ContactSection() {
     <section id="contact" className="py-28 md:py-36 border-t border-line">
       <div className="max-w-[76rem] mx-auto px-6">
         <FadeIn>
-          <p className="text-[11px] tracking-[0.3em] uppercase text-dim mb-5">§ 12 — Contact</p>
+          <p className="text-[11px] tracking-[0.3em] uppercase text-dim mb-5">§ 12 · Contact</p>
           <h2 className="font-serif font-normal text-fg leading-tight mb-6"
             style={{ fontSize: 'clamp(2rem, 5vw, 3.25rem)' }}>
             Next Steps
@@ -123,7 +123,7 @@ export default function ContactSection() {
                   name="message"
                   rows={4}
                   className="w-full bg-transparent border border-line px-4 py-3 text-fg text-sm placeholder-dim focus:outline-none focus:border-accent transition-colors duration-200 resize-none"
-                  placeholder="Optional — share anything relevant to your interest"
+                  placeholder="Optional: share anything relevant to your interest"
                 />
               </div>
 
@@ -176,8 +176,8 @@ export default function ContactSection() {
 
               <div className="pt-4 border-t border-line">
                 <p className="text-dim text-xs leading-relaxed">
-                  Full financial materials — including the recoupment waterfall model, detailed
-                  budget breakdown, and complete screenplay — are available under NDA upon request.
+                  Full financial materials, including the recoupment waterfall model, detailed
+                  budget breakdown, and complete screenplay, are available under NDA upon request.
                 </p>
               </div>
             </div>

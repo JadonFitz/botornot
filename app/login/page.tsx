@@ -3,7 +3,7 @@ import LoginForm from './LoginForm'
 import SignupForm from './SignupForm'
 
 export const metadata: Metadata = {
-  title: 'Investor Access — Bot or Not',
+  title: 'Investor Access | Bot or Not',
   robots: { index: false, follow: false },
 }
 

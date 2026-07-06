@@ -10,15 +10,15 @@ const packageItems: PackageItem[] = [
   {
     label: 'Cast Attachments',
     status: 'Cast in Place',
-    note: 'Meghan Carrasquillo (Juliet), Chris Moss (Declan Callum), and Gigi Gustin (Blair) are attached. All remaining roles cast through auditions — pitch-deck talent references are aspirational tone benchmarks, not locked cast. Packaging discipline: one strong selective name preferred over multiple recognizable-but-saturated names.',
+    note: 'Meghan Carrasquillo (Juliet), Chris Moss (Declan Callum), and Gigi Gustin (Blair) are attached. All remaining roles cast through auditions; pitch-deck talent references are aspirational tone benchmarks, not locked cast. Packaging discipline: one strong selective name preferred over multiple recognizable-but-saturated names.',
   },
   {
     label: 'Sales Agent / Distribution Path',
-    note: '[PLACEHOLDER: Populate as locked. Jackrabbit Media currently handling Bloom worldwide sales — potential connection point.]',
+    note: '[PLACEHOLDER: Populate as locked. Jackrabbit Media currently handling Bloom worldwide sales, potential connection point.]',
   },
   {
     label: 'Production Geography / Soft Money',
-    note: 'Lexington, Kentucky — based at Lex Studios (three stages, standing sets, offices). Kentucky Entertainment Incentive: refundable credit of 35% on resident labor and 30% on non-resident labor and Kentucky vendor spend, modeled to return ~19% of the production budget as cash post-audit.',
+    note: 'Lexington, Kentucky, based at Lex Studios (three stages, standing sets, offices). Kentucky Entertainment Incentive: refundable credit of 35% on resident labor and 30% on non-resident labor and Kentucky vendor spend, modeled to return ~19% of the production budget as cash post-audit.',
   },
   {
     label: 'Action Choreographer / 2nd Unit Director',
@@ -31,7 +31,7 @@ export default function PackageSection() {
     <section id="package" className="py-28 md:py-36 border-t border-line">
       <div className="max-w-[76rem] mx-auto px-6">
         <FadeIn>
-          <p className="text-[11px] tracking-[0.3em] uppercase text-dim mb-5">§ 06 — The Package</p>
+          <p className="text-[11px] tracking-[0.3em] uppercase text-dim mb-5">§ 06 · The Package</p>
           <h2 className="font-serif font-normal text-fg leading-tight mb-14"
             style={{ fontSize: 'clamp(2rem, 5vw, 3.25rem)' }}>
             The Package
