@@ -37,6 +37,15 @@ export default function LoginPage() {
           </div>
           <SignupForm />
         </div>
+
+        <a
+          href="https://www.youtube.com/watch?v=LdkvaQd8ySc"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="watch-blink mt-12 text-[13px] font-bold tracking-[0.3em] uppercase text-center"
+        >
+          &#9654; Watch the Short Film Now
+        </a>
       </div>
     </div>
   )
