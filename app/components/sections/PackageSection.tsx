@@ -1,4 +1,5 @@
 import FadeIn from '../FadeIn'
+import StageMap from '../StageMap'
 
 interface PackageItem {
   label: string
@@ -19,11 +20,64 @@ const packageItems: PackageItem[] = [
   },
   {
     label: 'Production Geography / Soft Money',
-    note: 'Lexington, Kentucky, based at Lex Studios (three stages, standing sets, offices). Kentucky Entertainment Incentive: refundable credit of 35% on resident labor and 30% on non-resident labor and Kentucky vendor spend, modeled to return ~19% of the production budget as cash post-audit.',
+    status: 'In Talks',
+    note: 'Base case: Lex Studios, Lexington, Kentucky. Talks underway; near-turnkey facility with a spring window open. Kentucky Entertainment Incentive: refundable credit of 35% on resident labor and 30% on non-resident labor and Kentucky vendor spend, modeled to return ~19% of the production budget as cash post-audit. Two Hudson Valley, NY stages are held as comparison options; see the map below.',
   },
   {
-    label: 'Action Choreographer / 2nd Unit Director',
-    note: 'Exploring options; attachment to be locked as packaging completes and financing closes.',
+    label: 'Stunt Coordination / Action Design / 2nd Unit',
+    status: 'Attached',
+    note: 'Declan Mulvey & Nitasha Bhambree, the Emmy-nominated stunt coordination and second-unit directing team behind CBS’s FBI: Most Wanted, with credits spanning Jessica Jones, The Penguin, and NBC’s The Blacklist (Emmy win, Outstanding Stunt Coordination). A New York–based duo who write and direct their own action films; at PG-13 scale this attachment carries packaging weight comparable to a cast name.',
+  },
+]
+
+interface StageOption {
+  name: string
+  place: string
+  chip: string
+  incentive: string
+  incentiveNote: string
+  perks: string[]
+}
+
+// Lex details per July 2026 facility call; NY incentive terms per Empire State
+// Development / Orange County NY Film Office (pre-diligence).
+const stageOptions: StageOption[] = [
+  {
+    name: 'Lex Studios',
+    place: 'Lexington, Kentucky',
+    chip: 'In Talks',
+    incentive: '30–35%',
+    incentiveNote: 'KY Entertainment Incentive: 35% resident labor · 30% non-resident labor & vendor spend · fringes and per diem qualify',
+    perks: [
+      '52,000 sq ft, new build: three stages (4,000–6,000 sq ft, 45′ clear), ~30 production offices',
+      'Near-turnkey: wardrobe, hair & makeup, crew dining ready to go',
+      'Producing-partner set builds at near-cost; pyro & rain SFX packages on the lot',
+      'Crew housing locked at a standing $79/night hotel rate, ~80 managed Airbnbs',
+      'Spring window currently wide open',
+    ],
+  },
+  {
+    name: 'Umbra Stages',
+    place: 'Newburgh, New York',
+    chip: 'Not Yet Engaged',
+    incentive: '40%',
+    incentiveNote: 'NYS credit: 30% base + 10% Orange County uplift; bonuses can stack toward 50%',
+    perks: [
+      'Dedicated NYS Independent Film credit pool, $100M annually',
+      'Hudson Valley: NYC-depth crew and cast within commuting radius',
+      'Home region of the attached stunt / action team',
+    ],
+  },
+  {
+    name: 'Choice Studios',
+    place: 'Montgomery, New York',
+    chip: 'Not Yet Engaged',
+    incentive: '40%',
+    incentiveNote: 'Same Orange County incentive profile as Umbra; bonuses can stack toward 50%',
+    perks: [
+      '15 minutes from Umbra Stages: one scout covers both facilities',
+      'Same NYC-radius crew depth and independent-film credit pool',
+    ],
   },
 ]
 
@@ -54,6 +108,48 @@ export default function PackageSection() {
             </FadeIn>
           ))}
         </div>
+
+        {/* Stage & incentive options */}
+        <FadeIn delay={0.1}>
+          <div className="mt-20 max-w-4xl">
+            <h3 className="text-[11px] tracking-[0.25em] uppercase text-dim mb-3">
+              Stage &amp; Incentive Options
+            </h3>
+            <p className="text-dim text-sm leading-relaxed max-w-2xl mb-8">
+              Kentucky is the modeled base case throughout the financing plan. Two Hudson Valley
+              facilities are held as comparison options; to date, only Lex Studios has been
+              engaged directly.
+            </p>
+            <StageMap />
+            <div className="grid md:grid-cols-3 gap-3 mt-3">
+              {stageOptions.map((opt) => (
+                <div key={opt.name} className="border border-line p-5 flex flex-col">
+                  <div className="flex items-start justify-between gap-3 mb-1">
+                    <p className="text-fg text-sm leading-snug">{opt.name}</p>
+                    <span className="flex-shrink-0 text-[9px] tracking-[0.15em] uppercase text-accent border border-accent/25 px-2 py-0.5 whitespace-nowrap">
+                      {opt.chip}
+                    </span>
+                  </div>
+                  <p className="text-dim text-xs mb-4">{opt.place}</p>
+                  <p className="font-serif text-3xl text-fg mb-1">{opt.incentive}</p>
+                  <p className="text-dim text-[11px] leading-relaxed mb-4">{opt.incentiveNote}</p>
+                  <ul className="space-y-1.5">
+                    {opt.perks.map((perk) => (
+                      <li key={perk} className="text-dim text-xs leading-relaxed pl-3 relative">
+                        <span className="absolute left-0 text-accent">·</span>
+                        {perk}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+            <p className="text-dim text-xs leading-relaxed mt-4 max-w-2xl">
+              Incentive figures are current program terms, not guarantees; New York facility
+              conversations have not yet begun and figures for those options are pre-diligence.
+            </p>
+          </div>
+        </FadeIn>
       </div>
     </section>
   )

@@ -103,7 +103,7 @@ export default function FinancingSection() {
               <p className="text-[11px] tracking-[0.25em] uppercase text-dim mb-3">Production</p>
               <p className="font-serif text-5xl text-fg font-normal">$3.0M</p>
               <p className="text-dim text-xs mt-3 leading-relaxed">
-                23-day Kentucky shoot through theatrical-grade finishing. 60% of raise.
+                23-day stage shoot through theatrical-grade finishing. 60% of raise.
               </p>
             </div>
             <div className="bg-bg p-7">
@@ -130,7 +130,7 @@ export default function FinancingSection() {
         <FadeIn delay={0.1}>
           <div className="max-w-4xl mb-14">
             <h3 className="text-[11px] tracking-[0.25em] uppercase text-dim mb-4">
-              Top Sheet · 23-Day Shoot · Lexington, Kentucky
+              Top Sheet · 23-Day Shoot · Kentucky Base Case
             </h3>
             <div className="overflow-x-auto">
               <table className="w-full text-sm min-w-[480px]">
@@ -365,9 +365,13 @@ export default function FinancingSection() {
                   Production Base
                 </h3>
                 <p className="text-dim text-sm leading-relaxed">
-                  Lex Studios, Lexington, Kentucky: three stages, standing sets, and production
-                  offices, with a 60′×40′ cyc and nine Avid bays at sister company Wrigley Media.
-                  23-day principal photography; LED volume work via mobile vendor package.
+                  Lex Studios, Lexington, Kentucky (base case): a new 52,000 sq ft facility with
+                  three stages at 45′ clear, ~30 production offices, and near-turnkey support
+                  spaces, with set builds priced at near-cost under a producing-partner model.
+                  23-day principal photography; LED volume work via mobile vendor package; green
+                  screen and cyc built to order; crew housing locked at standing hotel rates.
+                  Two Hudson Valley, NY stages (40% state credit) are held as comparison
+                  options, not yet engaged and not modeled here.
                 </p>
               </div>
             </div>
@@ -407,7 +411,7 @@ export default function FinancingSection() {
                   Residual Reserve
                 </h3>
                 <p className="text-fg text-xs leading-relaxed">
-                  Bot or Not's cap stack includes a dedicated residual reserve line in accordance
+                  Bot or Not&rsquo;s cap stack includes a dedicated residual reserve line in accordance
                   with updated WGA residual triggers. The team is structuring distribution agreements
                   to assign residual liability to the distributor wherever possible, with reserves
                   held against any portion retained by the production entity.

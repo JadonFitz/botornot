@@ -17,6 +17,11 @@ const risks = [
       "Tight BTL discipline. NTC's existing creative-pipeline efficiencies. Production geography chosen for soft-money and crew depth.",
   },
   {
+    risk: 'Labor cost escalation',
+    mitigation:
+      'The production budget sits deliberately below the threshold where guild signatory status becomes effectively unavoidable, and the Kentucky base has recent precedent delivering name-cast features, including stunt-heavy work, under this labor model. Stunt coverage is carried above the standard COI, and low-budget guild agreements remain available if the final casting strategy requires them.',
+  },
+  {
     risk: 'P&A coverage post-release',
     mitigation:
       'Theatrical strategy modeled on the Hunting Matthew Nichols indie blueprint: $100K viable P&A tier, density-over-scale 20-market approach, 90-day execution timeline. Theatrical treated as pricing mechanism, not profit center.',
@@ -34,7 +39,7 @@ const risks = [
   {
     risk: 'Saturated cast attachment risk',
     mitigation:
-      'Packaging discipline: one strong selective name preferred over multiple recognizable-but-saturated names. Action choreographer attachment carries equivalent weight at PG-13 scale.',
+      'Packaging discipline: one strong selective name preferred over multiple recognizable-but-saturated names. The attached Emmy-nominated stunt/action team carries equivalent packaging weight at PG-13 scale.',
   },
 ]
 

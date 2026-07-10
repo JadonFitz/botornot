@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import CursorTrail from './components/CursorTrail'
 import './globals.css'
 
 const geistSans = Geist({
@@ -56,6 +57,7 @@ export default function RootLayout({
         />
         <div className="fixed inset-0 -z-10 bg-bg/60" aria-hidden />
         {children}
+        <CursorTrail />
         <Analytics />
       </body>
     </html>

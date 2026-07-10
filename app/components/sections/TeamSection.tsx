@@ -5,7 +5,6 @@ const departments = [
   'Production Designer',
   'Editor',
   'Composer',
-  'Action Choreographer / 2nd Unit Director',
 ]
 
 export default function TeamSection() {
@@ -106,6 +105,45 @@ export default function TeamSection() {
             <p className="text-dim text-sm leading-relaxed">
               New Terrain Creative produces. Key producing team additions in development; to be
               announced as packaging completes.
+            </p>
+          </div>
+        </FadeIn>
+
+        {/* Stunt / action team */}
+        <FadeIn delay={0.22}>
+          <div className="border-t border-line pt-8 mb-8 max-w-3xl">
+            <div className="flex items-baseline gap-4 mb-4 flex-wrap">
+              <h3 className="text-[11px] tracking-[0.25em] uppercase text-dim">
+                Stunt Coordination / Action Design / 2nd Unit
+              </h3>
+              <span className="text-[10px] tracking-[0.18em] uppercase text-accent border border-accent/25 px-2.5 py-1">
+                Attached
+              </span>
+            </div>
+            <div className="w-[200px] aspect-[3/4] border border-line mb-6 overflow-hidden">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/declan-nitasha-headshot.jpg"
+                alt="Declan Mulvey and Nitasha Bhambree at the Primetime Emmys"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <p className="font-serif text-xl text-fg mb-4">
+              Declan Mulvey &amp; Nitasha Bhambree
+            </p>
+            <p className="text-dim text-sm leading-relaxed">
+              The Emmy-nominated stunt coordination and second-unit directing team behind
+              CBS&rsquo;s <em>FBI: Most Wanted</em>. In 2025, Nitasha became the first woman of
+              color ever nominated for stunt coordination at the Primetime Emmys, with the pair
+              only the second married couple to share a nomination in the category; she was also
+              part of the Emmy-winning stunt coordination team on NBC&rsquo;s{' '}
+              <em>The Blacklist</em>. Between them: <em>Jessica Jones</em>, <em>The Penguin</em>,{' '}
+              <em>A Friend of the Family</em>, <em>The Many Saints of Newark</em>, and performer
+              careers spanning <em>Joker</em>, <em>The Dark Knight Rises</em>,{' '}
+              <em>Avengers: Infinity War</em>, and Spielberg&rsquo;s <em>West Side Story</em>.
+              NYU-trained filmmakers in their own right, they write and direct their own
+              action-driven work, precisely the muscle behind <em>Bot or Not</em>&rsquo;s
+              contained cat-and-mouse set pieces.
             </p>
           </div>
         </FadeIn>
