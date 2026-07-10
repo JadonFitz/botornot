@@ -1,17 +1,31 @@
 import FadeIn from '../FadeIn'
 import StageMap from '../StageMap'
 
+interface CastMember {
+  name: string
+  role: string
+  img?: string
+}
+
 interface PackageItem {
   label: string
   note: string
   status?: string
+  cast?: CastMember[]
 }
+
+const attachedCast: CastMember[] = [
+  { name: 'Meghan Carrasquillo', role: 'Juliet', img: '/meghan-acting-headshot.jpg' },
+  { name: 'Chris Moss', role: 'Declan Callum', img: '/chris-headshot.jpg' },
+  { name: 'Gigi Gustin', role: 'Blair', img: '/gigi-headshot.jpg' },
+]
 
 const packageItems: PackageItem[] = [
   {
     label: 'Cast Attachments',
     status: 'Cast in Place',
-    note: 'Meghan Carrasquillo (Juliet), Chris Moss (Declan Callum), and Gigi Gustin (Blair) are attached. All remaining roles cast through auditions; pitch-deck talent references are aspirational tone benchmarks, not locked cast. Packaging discipline: one strong selective name preferred over multiple recognizable-but-saturated names.',
+    cast: attachedCast,
+    note: 'All remaining roles cast through auditions; pitch-deck talent references are aspirational tone benchmarks, not locked cast. Packaging discipline: one strong selective name preferred over multiple recognizable-but-saturated names.',
   },
   {
     label: 'Sales Agent / Distribution Path',
@@ -103,7 +117,33 @@ export default function PackageSection() {
                     {item.status ?? 'In Development'}
                   </span>
                 </div>
-                <p className={`text-sm leading-relaxed ${item.note.startsWith('[') ? 'text-dim italic' : 'text-dim'}`}>{item.note}</p>
+                <div className="flex-1">
+                  {item.cast && (
+                    <div className="flex flex-wrap gap-4 mb-5">
+                      {item.cast.map((member) => (
+                        <div key={member.name} className="w-24">
+                          <div className="w-24 aspect-[3/4] border border-line overflow-hidden bg-surface flex items-center justify-center">
+                            {member.img ? (
+                              // eslint-disable-next-line @next/next/no-img-element
+                              <img
+                                src={member.img}
+                                alt={member.name}
+                                className="w-full h-full object-cover"
+                              />
+                            ) : (
+                              <span className="font-serif text-xl text-dim">
+                                {member.name.split(' ').map((n) => n[0]).join('')}
+                              </span>
+                            )}
+                          </div>
+                          <p className="text-fg text-[11px] leading-snug mt-2">{member.name}</p>
+                          <p className="text-dim text-[10px] mt-0.5">as {member.role}</p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                  <p className={`text-sm leading-relaxed ${item.note.startsWith('[') ? 'text-dim italic' : 'text-dim'}`}>{item.note}</p>
+                </div>
               </div>
             </FadeIn>
           ))}
