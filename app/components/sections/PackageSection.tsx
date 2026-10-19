@@ -30,12 +30,12 @@ const packageItems: PackageItem[] = [
   {
     label: 'Sales Agent / Distribution Path',
     status: 'In Talks',
-    note: 'Currently weighing options and in talks with multiple distributors and sales agents to determine the best sales and acquisitions strategy, pending financing commitments and a significant cast attachment for presales.',
+    note: 'Currently weighing options and in talks with multiple distributors and sales agents to determine the best sales and acquisitions strategy, pending financing commitments and a significant cast attachment for presales. An added avenue: the newly launched FilmQuest film market, through our festival relationship with FilmQuest founder Jonathan Martin.',
   },
   {
     label: 'Production Geography / Soft Money',
     status: 'In Talks',
-    note: 'Base case: Lex Studios, Lexington, Kentucky. Talks underway; near-turnkey facility with a spring window open. Kentucky Entertainment Incentive: refundable credit of 35% on resident labor and 30% on non-resident labor and Kentucky vendor spend, modeled to return ~19% of the production budget as cash post-audit. Two Hudson Valley, NY stages are held as comparison options; see the map below.',
+    note: 'Base case: Lex Studios, Lexington, Kentucky. Talks underway; near-turnkey facility with a spring window open. Kentucky Entertainment Incentive: refundable credit of 35% on resident labor and 30% on non-resident labor and Kentucky vendor spend, modeled to return ~19% of the production budget as cash post-audit. Two Hudson Valley, NY stages and a Provo, Utah soundstage introduced through FilmQuest are held as comparison options; see the map below.',
   },
   {
     label: 'Stunt Coordination / Action Design / 2nd Unit',
@@ -54,7 +54,8 @@ interface StageOption {
 }
 
 // Lex details per July 2026 facility call; NY incentive terms per Empire State
-// Development / Orange County NY Film Office (pre-diligence).
+// Development / Orange County NY Film Office (pre-diligence). Provo details per
+// October 2026 call and virtual tour with FilmQuest's Jonathan Martin.
 const stageOptions: StageOption[] = [
   {
     name: 'Lex Studios',
@@ -91,6 +92,23 @@ const stageOptions: StageOption[] = [
     perks: [
       '15 minutes from Umbra Stages: one scout covers both facilities',
       'Same NYC-radius crew depth and independent-film credit pool',
+    ],
+  },
+  {
+    name: 'Provo Soundstage',
+    place: 'Provo, Utah',
+    chip: 'In Talks',
+    incentive: '25%',
+    incentiveNote: 'Utah Motion Picture Incentive: 25% over $1M spend (20% under); capped cash rebate, then uncapped tax credit; apply ~6 weeks pre-shoot',
+    perks: [
+      'Introduced by FilmQuest founder Jonathan Martin; FilmQuest offices share the building',
+      'Full soundstage: catwalks, blue screen, full blackout drape, elephant door, shore power for star wagons',
+      'In-building support: ~15 offices, green & makeup rooms, edit bays, dailies screening room; ADR / scoring room in build',
+      'Set-construction company on site; stage open, with only one children’s series using it for the past eight months',
+      'Right-to-work state: SAG productions negotiate crew rates; crew depth for three A-list shoots at once',
+      'FilmQuest-alumni 25% discount at a partner camera / G&E / color house',
+      'Walkable housing and dining; 10 minutes from the Sundance Resort',
+      'No in-state LED volume vendor today; volume work would travel in',
     ],
   },
 ]
@@ -157,11 +175,11 @@ export default function PackageSection() {
             </h3>
             <p className="text-dim text-sm leading-relaxed max-w-2xl mb-8">
               Kentucky is the modeled base case throughout the financing plan. Two Hudson Valley
-              facilities are held as comparison options; to date, only Lex Studios has been
-              engaged directly.
+              facilities and a Provo, Utah soundstage are held as comparison options; to date,
+              Lex Studios and the Provo stage have been engaged directly.
             </p>
             <StageMap />
-            <div className="grid md:grid-cols-3 gap-3 mt-3">
+            <div className="grid md:grid-cols-2 gap-3 mt-3">
               {stageOptions.map((opt) => (
                 <div key={opt.name} className="border border-line p-5 flex flex-col">
                   <div className="flex items-start justify-between gap-3 mb-1">
@@ -187,6 +205,8 @@ export default function PackageSection() {
             <p className="text-dim text-xs leading-relaxed mt-4 max-w-2xl">
               Incentive figures are current program terms, not guarantees; New York facility
               conversations have not yet begun and figures for those options are pre-diligence.
+              Utah terms are from an initial call and pending confirmation with the Utah Film
+              Commission.
             </p>
           </div>
         </FadeIn>

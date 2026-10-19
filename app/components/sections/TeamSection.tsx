@@ -1,7 +1,6 @@
 import FadeIn from '../FadeIn'
 
 const departments = [
-  'Cinematographer',
   'Production Designer',
   'Editor',
   'Composer',
@@ -144,6 +143,113 @@ export default function TeamSection() {
               NYU-trained filmmakers in their own right, they write and direct their own
               action-driven work, precisely the muscle behind <em>Bot or Not</em>&rsquo;s
               contained cat-and-mouse set pieces.
+            </p>
+          </div>
+        </FadeIn>
+
+        {/* Makeup / SFX team */}
+        <FadeIn delay={0.23}>
+          <div className="border-t border-line pt-8 mb-8 max-w-3xl">
+            <div className="flex items-baseline gap-4 mb-4 flex-wrap">
+              <h3 className="text-[11px] tracking-[0.25em] uppercase text-dim">
+                Makeup / Special Effects
+              </h3>
+              <span className="text-[10px] tracking-[0.18em] uppercase text-accent border border-accent/25 px-2.5 py-1">
+                Attached
+              </span>
+            </div>
+            <div className="flex gap-6 mb-6 flex-wrap">
+              <div>
+                <div className="w-[365px] max-w-full aspect-[985/721] border border-line mb-3 overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/monique-paredes.jpg"
+                    alt="Monique Paredes applying special effects makeup"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="text-[10px] tracking-wider uppercase text-dim">Monique Paredes</p>
+              </div>
+              <div>
+                <div className="w-[200px] aspect-[3/4] border border-line mb-3 overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/eric-headshot.jpg"
+                    alt="Eric Yoder sculpting a prosthetic bust"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="text-[10px] tracking-wider uppercase text-dim">Eric Yoder</p>
+              </div>
+            </div>
+            <p className="font-serif text-xl text-fg mb-4">
+              Monique Paredes &amp; Eric Yoder
+            </p>
+            <p className="text-dim text-sm leading-relaxed">
+              With more than 50 film and television productions between them, Paredes and Yoder
+              bring deep experience in special makeup effects, prosthetics, creature effects, gore
+              and trauma simulation, body and suit fabrication, sculpting, mold-making, and complex
+              practical effects. Their credits include <em>Strange Darling</em>,{' '}
+              <em>Miracle Workers</em>, <em>Darkness of Man</em>, <em>Till Death</em>,{' '}
+              <em>The Invisible Raptor</em>, <em>The Cello</em>, <em>Monster Mash</em>, and{' '}
+              <em>The Remedy</em>. Paredes is an experienced Makeup Department Head and Special
+              Effects Makeup Designer; Yoder&rsquo;s practical-effects work spans prosthetic and
+              creature fabrication, blood effects, traumatic injuries, body fabrication, and on-set
+              application. Together they make <em>Bot or Not</em>&rsquo;s most important illusion
+              tangible: where human flesh ends and artificial life begins.
+            </p>
+          </div>
+        </FadeIn>
+
+        {/* Cinematographer */}
+        <FadeIn delay={0.235}>
+          <div className="border-t border-line pt-8 mb-8 max-w-3xl">
+            <div className="flex items-baseline gap-4 mb-4 flex-wrap">
+              <h3 className="text-[11px] tracking-[0.25em] uppercase text-dim">
+                Cinematographer
+              </h3>
+              <span className="text-[10px] tracking-[0.18em] uppercase text-dim border border-line px-2.5 py-1">
+                In Consideration
+              </span>
+            </div>
+            <div className="flex gap-6 mb-6 flex-wrap">
+              <div>
+                <div className="w-[200px] aspect-[3/4] border border-line mb-3 overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/peter-headshot.jpg"
+                    alt="Peter Matjasko"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="text-[10px] tracking-wider uppercase text-dim">Peter Matjasko</p>
+              </div>
+              <div>
+                <div className="w-[213px] aspect-[399/501] border border-line mb-3 overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/poster-boy-kills-world.jpg"
+                    alt="Boy Kills World poster"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="text-[10px] tracking-wider uppercase text-dim">Boy Kills World</p>
+              </div>
+              <div>
+                <div className="w-[180px] aspect-[600/888] border border-line mb-3 overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/poster-magic-flute.jpg"
+                    alt="The Magic Flute poster"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="text-[10px] tracking-wider uppercase text-dim">The Magic Flute</p>
+              </div>
+            </div>
+            <p className="font-serif text-xl text-fg mb-4">Peter Matjasko</p>
+            <p className="text-dim text-sm leading-relaxed">
+              Cinematographer of <em>Boy Kills World</em> and <em>The Magic Flute</em>.
             </p>
           </div>
         </FadeIn>

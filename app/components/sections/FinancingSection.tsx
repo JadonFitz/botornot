@@ -370,8 +370,9 @@ export default function FinancingSection() {
                   spaces, with set builds priced at near-cost under a producing-partner model.
                   23-day principal photography; LED volume work via mobile vendor package; green
                   screen and cyc built to order; crew housing locked at standing hotel rates.
-                  Two Hudson Valley, NY stages (40% state credit) are held as comparison
-                  options, not yet engaged and not modeled here.
+                  Two Hudson Valley, NY stages (40% state credit) and a Provo, Utah soundstage
+                  (25% state incentive, in early talks) are held as comparison options, not
+                  modeled here.
                 </p>
               </div>
             </div>

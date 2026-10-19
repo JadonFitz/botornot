@@ -1,4 +1,4 @@
-// Stylized eastern-US map plotting the three stage options.
+// Stylized eastern-US map plotting the stage options (Provo, UT as an off-map pointer).
 // Equirectangular-ish projection: x = 30 + (lon + 90) * 31.43, y = 30 + (45.5 - lat) * 34.29
 const FG = '#F0EDE8'
 const DIM = '#7A746C'
@@ -10,7 +10,7 @@ export default function StageMap() {
       <svg
         viewBox="90 20 620 385"
         role="img"
-        aria-label="Map of the eastern United States marking Lex Studios in Lexington, Kentucky and Umbra Stages and Choice Studios in the Hudson Valley, New York"
+        aria-label="Map of the eastern United States marking Lex Studios in Lexington, Kentucky and Umbra Stages and Choice Studios in the Hudson Valley, New York, with a pointer west to the Provo Soundstage in Provo, Utah"
         className="w-full h-auto block"
       >
         {/* dot-grid land texture */}
@@ -62,6 +62,12 @@ export default function StageMap() {
         <text x="504" y="161" fill={DIM} fontSize="10" letterSpacing="0.06em" textAnchor="end">
           Hudson Valley, NY · 40% incentive
         </text>
+
+        {/* Provo, UT sits far west of the frame; marked as an off-map pointer at its latitude */}
+        <path d="M 108 205 L 100 211 L 108 217 Z" fill={ACCENT} />
+        <line x1="108" y1="211" x2="124" y2="211" stroke={ACCENT} strokeOpacity="0.5" strokeDasharray="2 3" />
+        <text x="130" y="208" fill={FG} fontSize="12" letterSpacing="0.04em">Provo Soundstage</text>
+        <text x="130" y="223" fill={DIM} fontSize="10" letterSpacing="0.06em">Provo, UT · 25% incentive</text>
       </svg>
     </div>
   )
